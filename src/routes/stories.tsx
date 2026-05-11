@@ -9,13 +9,13 @@ import { Play } from "lucide-react";
 export const Route = createFileRoute("/stories")({
   head: () => ({
     meta: [
-      { title: "Témoignages — Atlas & Atlas" },
+      { title: "Témoignages — Diaspora Talent" },
       {
         name: "description",
         content:
           "Parcours de la diaspora, retours exécutifs et leaders qui façonnent un Maroc moderne.",
       },
-      { property: "og:title", content: "Témoignages — Atlas & Atlas" },
+      { property: "og:title", content: "Témoignages — Diaspora Talent" },
       {
         property: "og:description",
         content: "De vrais parcours de professionnels marocains seniors qui rentrent au pays.",

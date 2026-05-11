@@ -7,13 +7,13 @@ import { SectionHeading } from "@/components/section-heading";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Prendre rendez-vous — Atlas & Atlas" },
+      { title: "Prendre rendez-vous — Diaspora Talent" },
       {
         name: "description",
         content:
           "Commencez par une consultation privée et confidentielle. Une heure, un stratège.",
       },
-      { property: "og:title", content: "Prendre rendez-vous — Atlas & Atlas" },
+      { property: "og:title", content: "Prendre rendez-vous — Diaspora Talent" },
       {
         property: "og:description",
         content: "Consultation privée pour les cadres et les organisations.",

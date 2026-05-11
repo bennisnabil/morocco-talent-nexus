@@ -13,7 +13,7 @@ import { articles } from "@/lib/insights";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Atlas & Atlas — Le réseau mondial des talents marocains" },
+      { title: "Diaspora Talent — Le réseau mondial des talents marocains" },
       {
         name: "description",
         content:
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Atlas & Atlas — Le réseau mondial des talents marocains",
+        content: "Diaspora Talent — Le réseau mondial des talents marocains",
       },
       {
         property: "og:description",

@@ -6,13 +6,13 @@ import { articles } from "@/lib/insights";
 export const Route = createFileRoute("/insights")({
   head: () => ({
     meta: [
-      { title: "Analyses — Atlas & Atlas" },
+      { title: "Analyses — Diaspora Talent" },
       {
         name: "description",
         content:
           "Analyses éditoriales sur le paysage exécutif marocain : salaires, retour, leadership, relocation et capital diaspora.",
       },
-      { property: "og:title", content: "Analyses — Atlas & Atlas" },
+      { property: "og:title", content: "Analyses — Diaspora Talent" },
       {
         property: "og:description",
         content: "Intelligence pour le cadre qui rentre.",

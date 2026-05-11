@@ -6,13 +6,13 @@ import { CtaButton } from "@/components/cta-button";
 export const Route = createFileRoute("/network")({
   head: () => ({
     meta: [
-      { title: "Plateforme Talents — Atlas & Atlas" },
+      { title: "Plateforme Talents — Diaspora Talent" },
       {
         name: "description",
         content:
           "Un réseau privé de cadres marocains du monde entier. Opportunités confidentielles, matching stratégique, mandats de leadership.",
       },
-      { property: "og:title", content: "La Plateforme Talents — Atlas & Atlas" },
+      { property: "og:title", content: "La Plateforme Talents — Diaspora Talent" },
       {
         property: "og:description",
         content:

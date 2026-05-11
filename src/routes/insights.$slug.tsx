@@ -11,7 +11,7 @@ export const Route = createFileRoute("/insights/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.article.title} — Analyses Atlas & Atlas` },
+          { title: `${loaderData.article.title} — Analyses Diaspora Talent` },
           { name: "description", content: loaderData.article.excerpt },
           { property: "og:title", content: loaderData.article.title },
           { property: "og:description", content: loaderData.article.excerpt },
