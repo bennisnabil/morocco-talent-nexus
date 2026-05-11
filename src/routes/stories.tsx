@@ -9,16 +9,16 @@ import { Play } from "lucide-react";
 export const Route = createFileRoute("/stories")({
   head: () => ({
     meta: [
-      { title: "Success Stories — Atlas & Atlas" },
+      { title: "Témoignages — Atlas & Atlas" },
       {
         name: "description",
         content:
-          "Diaspora journeys, executive returns, and the leaders shaping a modern Morocco.",
+          "Parcours de la diaspora, retours exécutifs et leaders qui façonnent un Maroc moderne.",
       },
-      { property: "og:title", content: "Success Stories — Atlas & Atlas" },
+      { property: "og:title", content: "Témoignages — Atlas & Atlas" },
       {
         property: "og:description",
-        content: "Real journeys from senior Moroccan professionals returning home.",
+        content: "De vrais parcours de professionnels marocains seniors qui rentrent au pays.",
       },
     ],
   }),
@@ -28,30 +28,30 @@ export const Route = createFileRoute("/stories")({
 const stories = [
   {
     quote:
-      "After 15 years in London's financial district, the transition to Casablanca was made seamless. I found a role that matches my ambition while contributing to the Kingdom's growth.",
+      "Après 15 ans dans la City de Londres, la transition vers Casablanca a été d'une fluidité totale. J'ai trouvé un poste à la hauteur de mon ambition tout en contribuant à la croissance du Royaume.",
     name: "Mehdi Karam",
-    role: "Chief Investment Officer, CFC Partner",
+    role: "Chief Investment Officer, partenaire CFC",
     image: story2,
   },
   {
     quote:
-      "Atlas didn't just find me a role; they managed my family's entire relocation strategy. The networking they provided upon arrival was world-class.",
+      "Atlas n'a pas seulement trouvé mon poste : ils ont piloté toute la stratégie de relocation de ma famille. Le réseau dont j'ai bénéficié à l'arrivée était de classe mondiale.",
     name: "Sofia Alaoui",
     role: "Head of Sustainability, OCP Group",
     image: story1,
   },
   {
     quote:
-      "I had received offers in Morocco for years, but nothing matched the precision of what Atlas put in front of me. The fit was instant.",
+      "J'avais reçu des offres au Maroc pendant des années, mais rien n'égalait la précision de ce qu'Atlas a mis devant moi. L'adéquation a été immédiate.",
     name: "Yassine Tazi",
     role: "Managing Director, Casablanca Finance City",
     image: story2,
   },
   {
     quote:
-      "What surprised me most was the depth of the network. Within weeks I was sitting with people I had spent a decade trying to reach.",
+      "Ce qui m'a le plus surprise, c'est la profondeur du réseau. En quelques semaines, j'étais en réunion avec des personnes que j'avais cherché à atteindre pendant dix ans.",
     name: "Nadia El Amrani",
-    role: "Partner, Regional Venture Fund",
+    role: "Partner, Fonds régional de venture",
     image: story1,
   },
 ];
@@ -62,9 +62,9 @@ function StoriesPage() {
       <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
-            eyebrow="Success Stories"
-            title="Paths traveled. Futures built."
-            subtitle="A glimpse into the executives who chose to return — and what they are building now."
+            eyebrow="Témoignages"
+            title="Des chemins parcourus. Des futurs construits."
+            subtitle="Un aperçu des cadres qui ont choisi de rentrer — et de ce qu'ils construisent aujourd'hui."
             serifClass="text-5xl md:text-7xl"
           />
         </div>
@@ -74,7 +74,7 @@ function StoriesPage() {
       <section className="px-6 py-24">
         <div className="max-w-7xl mx-auto">
           <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-10">
-            In their words
+            Dans leurs mots
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {[story1, story2, story1].map((src, i) => (
@@ -96,7 +96,7 @@ function StoriesPage() {
                       <Play className="size-4 fill-current" />
                     </span>
                     <span className="text-sm font-medium">
-                      Watch — 2:40
+                      Regarder — 2:40
                     </span>
                   </div>
                 </div>
@@ -118,9 +118,9 @@ function StoriesPage() {
       <section className="px-6 py-24 bg-primary text-primary-foreground text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
-            Your story could be next.
+            Votre histoire pourrait être la prochaine.
           </h2>
-          <CtaButton to="/join">Apply to the Network</CtaButton>
+          <CtaButton to="/join">Postuler au réseau</CtaButton>
         </div>
       </section>
     </>

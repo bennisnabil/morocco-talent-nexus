@@ -13,20 +13,20 @@ import { articles } from "@/lib/insights";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Atlas & Atlas — The Global Moroccan Talent Network" },
+      { title: "Atlas & Atlas — Le réseau mondial des talents marocains" },
       {
         name: "description",
         content:
-          "Executive opportunities, strategic relocation, and premium return-to-Morocco support for Moroccan professionals worldwide.",
+          "Opportunités exécutives, relocation stratégique et accompagnement premium au retour au Maroc pour les professionnels marocains du monde entier.",
       },
       {
         property: "og:title",
-        content: "Atlas & Atlas — The Global Moroccan Talent Network",
+        content: "Atlas & Atlas — Le réseau mondial des talents marocains",
       },
       {
         property: "og:description",
         content:
-          "Reconnect Morocco with its global talent. A private executive platform for the Moroccan diaspora.",
+          "Reconnecter le Maroc à ses talents globaux. Une plateforme exécutive privée pour la diaspora marocaine.",
       },
     ],
   }),
@@ -41,31 +41,30 @@ function HomePage() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-[1fr_440px] gap-16 items-end">
           <div className="space-y-8 animate-reveal-up">
             <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              The Global Moroccan Talent Network
+              Le réseau mondial des talents marocains
             </p>
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-primary leading-[0.95] text-balance">
-              Reconnect Morocco
+              Reconnecter le Maroc
               <br />
-              <span className="italic">With Its Global Talent</span>
+              <span className="italic">à ses talents globaux.</span>
             </h1>
             <p className="text-lg lg:text-xl text-muted-foreground max-w-[52ch] leading-relaxed">
-              Executive opportunities, strategic relocation, and premium
-              return-to-Morocco support for Moroccan professionals worldwide.
+              Opportunités exécutives, relocation stratégique et accompagnement premium au retour au Maroc pour les professionnels marocains du monde entier.
             </p>
             <div className="flex flex-wrap gap-3 pt-4">
-              <CtaButton to="/join">Join the Network</CtaButton>
+              <CtaButton to="/join">Rejoindre le réseau</CtaButton>
               <CtaButton to="/network" variant="secondary">
-                Explore Opportunities
+                Explorer les opportunités
               </CtaButton>
               <CtaButton to="/contact" variant="ghost">
-                Book a Consultation
+                Prendre rendez-vous
               </CtaButton>
             </div>
           </div>
           <div className="relative">
             <img
               src={heroImg}
-              alt="Casablanca Finance City skyline at golden hour"
+              alt="Skyline de Casablanca Finance City à l'heure dorée"
               width={1080}
               height={1350}
               className="w-full aspect-[4/5] object-cover ring-1 ring-border"
@@ -75,7 +74,7 @@ function HomePage() {
                 Impact
               </p>
               <p className="font-serif italic text-lg leading-snug">
-                A bridge between global expertise and national ambition.
+                Un pont entre l'expertise globale et l'ambition nationale.
               </p>
             </div>
           </div>
@@ -86,9 +85,9 @@ function HomePage() {
       <section className="border-y border-border">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
-            <h2 className="font-serif text-3xl">Strategic Sectors</h2>
+            <h2 className="font-serif text-3xl">Secteurs stratégiques</h2>
             <span className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              01 — Matching Expertise
+              01 — Alignement d'expertise
             </span>
           </div>
           <SectorGrid />
@@ -99,15 +98,15 @@ function HomePage() {
       <section className="px-6 py-24 lg:py-32">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <SectionHeading
-            eyebrow="02 — The Platform"
-            title="A private ecosystem for global Moroccan leaders."
-            subtitle="We don't post jobs. We curate career-defining transitions for the Moroccan diaspora across Finance, Tech, Industry, Infrastructure, ESG, Hospitality, and Healthcare."
+            eyebrow="02 — La Plateforme"
+            title="Un écosystème privé pour les leaders marocains du monde entier."
+            subtitle="Nous ne publions pas d'offres. Nous orchestrons des transitions de carrière déterminantes pour la diaspora marocaine — Tech, Finance, Industrie, Infrastructure, ESG, Hôtellerie, Santé."
           />
           <div className="space-y-1">
             {[
-              ["Executive Matching", "Algorithmic precision combined with strategic human insight."],
-              ["Confidential Access", "Non-public board roles and strategic mandates."],
-              ["Strategic Mapping", "Diaspora intelligence for the Kingdom's most ambitious organizations."],
+              ["Matching exécutif", "La précision algorithmique combinée à la lecture stratégique humaine."],
+              ["Accès confidentiel", "Mandats non publics et opportunités stratégiques au plus haut niveau."],
+              ["Cartographie stratégique", "Intelligence diaspora pour les organisations les plus ambitieuses du Royaume."],
             ].map(([t, d]) => (
               <div
                 key={t}
@@ -121,7 +120,7 @@ function HomePage() {
             ))}
             <div className="pt-6">
               <CtaButton to="/network" variant="ghost">
-                Explore the platform
+                Explorer la plateforme
               </CtaButton>
             </div>
           </div>
@@ -133,20 +132,19 @@ function HomePage() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-[1fr_1.1fr] gap-16">
           <div>
             <p className="text-[10px] uppercase tracking-[0.3em] text-secondary/60 mb-5">
-              03 — Return to Morocco
+              03 — Retour au Maroc
             </p>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-6 text-balance">
-              Concierge for the
+              Conciergerie pour
               <br />
-              <span className="italic">professional homecoming.</span>
+              <span className="italic">le retour exécutif.</span>
             </h2>
             <p className="text-secondary/70 max-w-[40ch] mb-10">
-              Returning home is a strategic move, not a logistical one. We manage
-              the complexity so you can focus on the impact.
+              Rentrer au pays est un choix stratégique, pas une démarche logistique. Nous gérons la complexité, vous vous concentrez sur l'impact.
             </p>
             <img
               src={returnImg}
-              alt="Modern Moroccan terrace overlooking Hassan II minaret"
+              alt="Terrasse marocaine moderne avec vue sur le minaret Hassan II"
               width={1080}
               height={1440}
               loading="lazy"
@@ -155,10 +153,10 @@ function HomePage() {
           </div>
           <div className="grid sm:grid-cols-2 gap-1">
             {[
-              ["Career Strategy", "Aligning international expertise with high-impact Moroccan roles."],
-              ["Relocation Assistance", "End-to-end logistics: housing, schooling, healthcare."],
-              ["Tax & Administrative", "DRI status, fiscal optimization, and governance."],
-              ["Networking Access", "Warm introductions to Morocco's industrial leadership."],
+              ["Stratégie de carrière", "Aligner votre expertise internationale avec les rôles à fort impact au Maroc."],
+              ["Assistance à la relocation", "Logistique de bout en bout : logement, scolarité, santé."],
+              ["Fiscalité & administratif", "Statut DRI, optimisation fiscale et gouvernance."],
+              ["Accès au réseau", "Introductions stratégiques aux décideurs industriels du Royaume."],
             ].map(([t, d], i) => (
               <ServiceCard
                 key={t}
@@ -173,7 +171,7 @@ function HomePage() {
                 to="/return"
                 className="inline-flex items-center gap-3 border border-secondary/30 text-secondary px-6 py-3 text-sm tracking-wide hover:bg-secondary hover:text-primary transition-colors"
               >
-                See all return services →
+                Voir tous les services de retour →
               </Link>
             </div>
           </div>
@@ -185,19 +183,19 @@ function HomePage() {
         <div className="max-w-7xl mx-auto bg-secondary/30 ring-1 ring-border p-10 md:p-16 lg:p-24">
           <div className="max-w-3xl">
             <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-5">
-              04 — For Companies
+              04 — Pour les entreprises
             </p>
             <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-6 text-balance">
-              Access world-class
+              Accédez aux talents
               <br />
-              <span className="italic">Moroccan talent.</span>
+              <span className="italic">marocains de classe mondiale.</span>
             </h2>
             <div className="grid md:grid-cols-2 gap-10 mt-12">
               {[
-                ["Executive Search", "Discreet acquisition of leadership for sovereign and private interests."],
-                ["Diaspora Mapping", "We track the most influential Moroccan minds across NYC, London, Paris, and Dubai."],
-                ["Confidential Recruitment", "Sensitive mandates handled with absolute discretion."],
-                ["Leadership Hiring", "Long-term partnerships shaping executive teams."],
+                ["Executive Search", "Recrutement discret de leaders pour intérêts souverains et privés."],
+                ["Cartographie diaspora", "Suivi des esprits marocains les plus influents à NYC, Londres, Paris et Dubaï."],
+                ["Recrutement confidentiel", "Mandats sensibles traités en discrétion absolue."],
+                ["Leadership hiring", "Partenariats long terme pour structurer vos équipes dirigeantes."],
               ].map(([t, d]) => (
                 <div key={t}>
                   <h4 className="font-medium mb-2">{t}</h4>
@@ -206,7 +204,7 @@ function HomePage() {
               ))}
             </div>
             <div className="mt-12">
-              <CtaButton to="/companies">Partner with us</CtaButton>
+              <CtaButton to="/companies">Devenir partenaire</CtaButton>
             </div>
           </div>
         </div>
@@ -217,7 +215,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-[1fr_1.1fr] gap-16 items-center">
           <img
             src={story1}
-            alt="Sarah Benjelloun — Director of ESG"
+            alt="Sarah Benjelloun — Directrice ESG"
             width={1024}
             height={1024}
             loading="lazy"
@@ -225,16 +223,16 @@ function HomePage() {
           />
           <div>
             <p className="text-[10px] uppercase tracking-[0.3em] text-gold mb-5">
-              05 — Success Story
+              05 — Témoignage
             </p>
             <Testimonial
-              quote="Coming back wasn't just a career move. It was about contributing to the vision of a modern Morocco — with the resources to actually do it."
+              quote="Rentrer n'était pas qu'un mouvement de carrière. C'était contribuer à la vision d'un Maroc moderne — avec les ressources pour le faire vraiment."
               name="Sarah Benjelloun"
-              role="Director of ESG, Regional Infrastructure Fund"
+              role="Directrice ESG, Fonds Régional d'Infrastructures"
             />
             <div className="mt-8">
               <CtaButton to="/stories" variant="ghost">
-                Read more journeys
+                Lire d'autres parcours
               </CtaButton>
             </div>
           </div>
@@ -246,11 +244,11 @@ function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-end justify-between mb-16 flex-wrap gap-6">
             <SectionHeading
-              eyebrow="06 — Insights"
-              title="Intelligence for the returning executive."
+              eyebrow="06 — Analyses"
+              title="Intelligence pour le cadre qui rentre."
             />
             <CtaButton to="/insights" variant="ghost">
-              All insights
+              Toutes les analyses
             </CtaButton>
           </div>
           <div className="grid md:grid-cols-3 gap-10">

@@ -7,16 +7,16 @@ import { SectionHeading } from "@/components/section-heading";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Book a Consultation — Atlas & Atlas" },
+      { title: "Prendre rendez-vous — Atlas & Atlas" },
       {
         name: "description",
         content:
-          "Begin with a private, confidential consultation. One hour, one strategist.",
+          "Commencez par une consultation privée et confidentielle. Une heure, un stratège.",
       },
-      { property: "og:title", content: "Book a Consultation — Atlas & Atlas" },
+      { property: "og:title", content: "Prendre rendez-vous — Atlas & Atlas" },
       {
         property: "og:description",
-        content: "Private consultation for executives and organizations.",
+        content: "Consultation privée pour les cadres et les organisations.",
       },
     ],
   }),
@@ -24,11 +24,11 @@ export const Route = createFileRoute("/contact")({
 });
 
 const schema = z.object({
-  name: z.string().trim().min(2, "Name is required").max(100),
-  email: z.string().trim().email("Invalid email").max(255),
-  role: z.string().trim().min(2, "Role is required").max(120),
-  country: z.string().trim().min(2, "Country is required").max(80),
-  message: z.string().trim().min(10, "Message must be at least 10 characters").max(2000),
+  name: z.string().trim().min(2, "Le nom est requis").max(100),
+  email: z.string().trim().email("Email invalide").max(255),
+  role: z.string().trim().min(2, "La fonction est requise").max(120),
+  country: z.string().trim().min(2, "Le pays est requis").max(80),
+  message: z.string().trim().min(10, "Le message doit faire au moins 10 caractères").max(2000),
 });
 
 function ContactPage() {
@@ -53,7 +53,7 @@ function ContactPage() {
     setTimeout(() => {
       setSubmitting(false);
       (e.target as HTMLFormElement).reset();
-      toast.success("Consultation request received. A partner will respond within 48 hours.");
+      toast.success("Demande reçue. Un partner vous répondra sous 48 heures.");
     }, 700);
   }
 
@@ -62,9 +62,9 @@ function ContactPage() {
       <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
-            eyebrow="Book a Consultation"
-            title="One hour. One strategist. Complete confidentiality."
-            subtitle="Tell us where you are in your journey. A partner will be in touch within 48 hours."
+            eyebrow="Prendre rendez-vous"
+            title="Une heure. Un stratège. Confidentialité totale."
+            subtitle="Dites-nous où vous en êtes. Un partner vous recontacte sous 48 heures."
             serifClass="text-5xl md:text-7xl"
           />
         </div>
@@ -73,13 +73,13 @@ function ContactPage() {
       <section className="px-6 py-24">
         <div className="max-w-3xl mx-auto">
           <form onSubmit={onSubmit} className="space-y-6">
-            <Field label="Full name" name="name" error={errors.name} />
+            <Field label="Nom complet" name="name" error={errors.name} />
             <Field label="Email" name="email" type="email" error={errors.email} />
-            <Field label="Current role / title" name="role" error={errors.role} />
-            <Field label="Country of residence" name="country" error={errors.country} />
+            <Field label="Fonction actuelle" name="role" error={errors.role} />
+            <Field label="Pays de résidence" name="country" error={errors.country} />
             <div>
               <label className="block text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-3">
-                Tell us about your situation
+                Parlez-nous de votre situation
               </label>
               <textarea
                 name="message"
@@ -95,7 +95,7 @@ function ContactPage() {
               disabled={submitting}
               className="bg-primary text-primary-foreground px-8 py-4 text-sm tracking-wide hover:opacity-90 disabled:opacity-60"
             >
-              {submitting ? "Sending..." : "Request Consultation"}
+              {submitting ? "Envoi..." : "Demander un rendez-vous"}
             </button>
           </form>
         </div>

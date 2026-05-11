@@ -1,11 +1,11 @@
 const sectors = [
   "Tech",
   "Finance",
-  "Industry",
+  "Industrie",
   "Infrastructure",
   "ESG",
-  "Hospitality",
-  "Healthcare",
+  "Hôtellerie",
+  "Santé",
 ];
 
 export function SectorGrid() {

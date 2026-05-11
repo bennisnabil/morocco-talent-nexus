@@ -7,16 +7,16 @@ import { SectionHeading } from "@/components/section-heading";
 export const Route = createFileRoute("/join")({
   head: () => ({
     meta: [
-      { title: "Join the Network — Atlas & Atlas" },
+      { title: "Rejoindre le réseau — Atlas & Atlas" },
       {
         name: "description",
         content:
-          "Apply to a private network of senior Moroccan executives worldwide.",
+          "Postulez à un réseau privé de cadres marocains seniors du monde entier.",
       },
-      { property: "og:title", content: "Join the Network — Atlas & Atlas" },
+      { property: "og:title", content: "Rejoindre le réseau — Atlas & Atlas" },
       {
         property: "og:description",
-        content: "Membership is by application. Begin yours.",
+        content: "L'adhésion se fait sur candidature. Commencez la vôtre.",
       },
     ],
   }),
@@ -24,13 +24,13 @@ export const Route = createFileRoute("/join")({
 });
 
 const schema = z.object({
-  name: z.string().trim().min(2).max(100),
-  email: z.string().trim().email().max(255),
-  location: z.string().trim().min(2).max(120),
-  sector: z.string().trim().min(2).max(80),
-  seniority: z.string().trim().min(2).max(80),
-  linkedin: z.string().trim().url("Must be a valid URL").max(255),
-  message: z.string().trim().min(10).max(2000),
+  name: z.string().trim().min(2, "Le nom est requis").max(100),
+  email: z.string().trim().email("Email invalide").max(255),
+  location: z.string().trim().min(2, "La localisation est requise").max(120),
+  sector: z.string().trim().min(2, "Le secteur est requis").max(80),
+  seniority: z.string().trim().min(2, "La séniorité est requise").max(80),
+  linkedin: z.string().trim().url("URL invalide").max(255),
+  message: z.string().trim().min(10, "Le message doit faire au moins 10 caractères").max(2000),
 });
 
 function JoinPage() {
@@ -55,7 +55,7 @@ function JoinPage() {
     setTimeout(() => {
       setSubmitting(false);
       (e.target as HTMLFormElement).reset();
-      toast.success("Application received. Our team will review and respond within 5 business days.");
+      toast.success("Candidature reçue. Notre équipe revient vers vous sous 5 jours ouvrés.");
     }, 700);
   }
 
@@ -64,9 +64,9 @@ function JoinPage() {
       <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
-            eyebrow="Apply to the Network"
-            title="Membership is by application."
-            subtitle="The network is reserved for senior Moroccan professionals worldwide. All applications are reviewed in confidence."
+            eyebrow="Postuler au réseau"
+            title="L'adhésion se fait sur candidature."
+            subtitle="Le réseau est réservé aux professionnels marocains seniors du monde entier. Toutes les candidatures sont examinées en confidentialité."
             serifClass="text-5xl md:text-7xl"
           />
         </div>
@@ -75,28 +75,28 @@ function JoinPage() {
       <section className="px-6 py-24">
         <div className="max-w-3xl mx-auto">
           <form onSubmit={onSubmit} className="grid md:grid-cols-2 gap-6">
-            <Field label="Full name" name="name" error={errors.name} />
+            <Field label="Nom complet" name="name" error={errors.name} />
             <Field label="Email" name="email" type="email" error={errors.email} />
             <Field
-              label="Current location"
+              label="Localisation actuelle"
               name="location"
               error={errors.location}
             />
-            <Field label="Primary sector" name="sector" error={errors.sector} />
+            <Field label="Secteur principal" name="sector" error={errors.sector} />
             <Field
-              label="Seniority"
+              label="Séniorité"
               name="seniority"
               error={errors.seniority}
             />
             <Field
-              label="LinkedIn URL"
+              label="URL LinkedIn"
               name="linkedin"
               type="url"
               error={errors.linkedin}
             />
             <div className="md:col-span-2">
               <label className="block text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-3">
-                What are you looking for?
+                Que recherchez-vous ?
               </label>
               <textarea
                 name="message"
@@ -113,7 +113,7 @@ function JoinPage() {
                 disabled={submitting}
                 className="bg-primary text-primary-foreground px-8 py-4 text-sm tracking-wide hover:opacity-90 disabled:opacity-60"
               >
-                {submitting ? "Sending..." : "Submit Application"}
+                {submitting ? "Envoi..." : "Soumettre ma candidature"}
               </button>
             </div>
           </form>

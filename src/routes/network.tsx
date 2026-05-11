@@ -6,17 +6,17 @@ import { CtaButton } from "@/components/cta-button";
 export const Route = createFileRoute("/network")({
   head: () => ({
     meta: [
-      { title: "Talent Platform — Atlas & Atlas" },
+      { title: "Plateforme Talents — Atlas & Atlas" },
       {
         name: "description",
         content:
-          "A private network of Moroccan executives worldwide. Confidential opportunities, strategic matching, leadership mandates.",
+          "Un réseau privé de cadres marocains du monde entier. Opportunités confidentielles, matching stratégique, mandats de leadership.",
       },
-      { property: "og:title", content: "The Talent Platform — Atlas & Atlas" },
+      { property: "og:title", content: "La Plateforme Talents — Atlas & Atlas" },
       {
         property: "og:description",
         content:
-          "Confidential executive opportunities for the global Moroccan diaspora.",
+          "Opportunités exécutives confidentielles pour la diaspora marocaine globale.",
       },
     ],
   }),
@@ -29,15 +29,15 @@ function NetworkPage() {
       <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
-            eyebrow="The Talent Platform"
-            title="A private network for Moroccan executives, worldwide."
-            subtitle="Strategic matching, confidential opportunities, and leadership mandates curated for senior professionals across continents."
+            eyebrow="La Plateforme Talents"
+            title="Un réseau privé pour les cadres marocains, partout dans le monde."
+            subtitle="Matching stratégique, opportunités confidentielles et mandats de leadership conçus pour les professionnels seniors, sur tous les continents."
             serifClass="text-5xl md:text-7xl"
           />
           <div className="mt-12 flex flex-wrap gap-3">
-            <CtaButton to="/join">Apply to the Network</CtaButton>
+            <CtaButton to="/join">Postuler au réseau</CtaButton>
             <CtaButton to="/contact" variant="ghost">
-              Speak with a partner
+              Échanger avec un partner
             </CtaButton>
           </div>
         </div>
@@ -46,7 +46,7 @@ function NetworkPage() {
       <section className="px-6 py-20 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-10">
-            Strategic Sectors
+            Secteurs stratégiques
           </p>
           <SectorGrid />
         </div>
@@ -55,12 +55,12 @@ function NetworkPage() {
       <section className="px-6 py-24 lg:py-32">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-1">
           {[
-            ["Executive Matching", "Senior profiles matched with C-suite, board, and director mandates across Morocco's most strategic organizations."],
-            ["Confidential Opportunities", "Non-public roles handled discreetly. Members access mandates that never reach the open market."],
-            ["Strategic Hiring", "We work with national champions, sovereign interests, and ambitious private groups looking for diaspora-grade leadership."],
-            ["International Profiles", "Members holding senior positions in NYC, London, Paris, Dubai, Singapore, Geneva, and beyond."],
-            ["Leadership Mandates", "Active searches across Tech, Finance, Industry, Infrastructure, ESG, Hospitality, and Healthcare."],
-            ["Discretion First", "Every membership and mandate is governed by strict confidentiality. Your candidacy never circulates."],
+            ["Matching exécutif", "Profils seniors associés à des mandats C-suite, board et direction au sein des organisations les plus stratégiques du Maroc."],
+            ["Opportunités confidentielles", "Postes non publics traités avec discrétion. Les membres accèdent à des mandats qui n'atteignent jamais le marché ouvert."],
+            ["Recrutement stratégique", "Nous travaillons avec des champions nationaux, des intérêts souverains et des groupes privés ambitieux à la recherche d'un leadership de calibre diaspora."],
+            ["Profils internationaux", "Des membres occupant des postes seniors à NYC, Londres, Paris, Dubaï, Singapour, Genève et bien au-delà."],
+            ["Mandats de leadership", "Recherches actives en Tech, Finance, Industrie, Infrastructure, ESG, Hôtellerie et Santé."],
+            ["La discrétion d'abord", "Chaque adhésion et chaque mandat sont régis par une confidentialité stricte. Votre candidature ne circule jamais."],
           ].map(([t, d]) => (
             <div key={t} className="p-8 md:p-10 ring-1 ring-border bg-background">
               <h3 className="font-serif text-2xl mb-4">{t}</h3>
@@ -73,14 +73,13 @@ function NetworkPage() {
       <section className="px-6 py-24 bg-primary text-primary-foreground">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-6 text-balance">
-            Ready for your next chapter?
+            Prêt pour votre prochain chapitre ?
           </h2>
           <p className="text-secondary/70 mb-10">
-            Join a private network of senior Moroccan professionals shaping the
-            Kingdom's future.
+            Rejoignez un réseau privé de professionnels marocains seniors qui façonnent l'avenir du Royaume.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <CtaButton to="/join">Apply to the Network</CtaButton>
+            <CtaButton to="/join">Postuler au réseau</CtaButton>
           </div>
         </div>
       </section>

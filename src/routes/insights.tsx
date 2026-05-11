@@ -6,16 +6,16 @@ import { articles } from "@/lib/insights";
 export const Route = createFileRoute("/insights")({
   head: () => ({
     meta: [
-      { title: "Insights — Atlas & Atlas" },
+      { title: "Analyses — Atlas & Atlas" },
       {
         name: "description",
         content:
-          "Editorial intelligence on the Moroccan executive landscape: salaries, returning, leadership, relocation, and diaspora capital.",
+          "Analyses éditoriales sur le paysage exécutif marocain : salaires, retour, leadership, relocation et capital diaspora.",
       },
-      { property: "og:title", content: "Insights — Atlas & Atlas" },
+      { property: "og:title", content: "Analyses — Atlas & Atlas" },
       {
         property: "og:description",
-        content: "Intelligence for the returning executive.",
+        content: "Intelligence pour le cadre qui rentre.",
       },
     ],
   }),
@@ -28,9 +28,9 @@ function InsightsPage() {
       <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
-            eyebrow="Insights"
-            title="Intelligence for the returning executive."
-            subtitle="Field-tested perspectives on returning to Morocco, executive compensation, and the diaspora economy."
+            eyebrow="Analyses"
+            title="Intelligence pour le cadre qui rentre."
+            subtitle="Perspectives terrain sur le retour au Maroc, la rémunération exécutive et l'économie de la diaspora."
             serifClass="text-5xl md:text-7xl"
           />
         </div>

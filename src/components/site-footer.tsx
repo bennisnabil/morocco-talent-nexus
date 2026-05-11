@@ -7,39 +7,39 @@ export function SiteFooter() {
         <div className="space-y-6">
           <div className="font-serif italic text-2xl tracking-tight">Atlas &amp; Atlas</div>
           <p className="text-sm text-muted-foreground max-w-[36ch]">
-            The premier private network bridging the global Moroccan executive diaspora with the Kingdom's strategic future.
+            Le réseau privé de référence reliant la diaspora marocaine d'excellence à l'avenir stratégique du Royaume.
           </p>
         </div>
         <FooterCol
-          title="Network"
+          title="Réseau"
           items={[
-            { to: "/network", label: "Talent Platform" },
-            { to: "/return", label: "Return to Morocco" },
+            { to: "/network", label: "Plateforme Talents" },
+            { to: "/return", label: "Retour au Maroc" },
             { to: "/companies", label: "Executive Search" },
           ]}
         />
         <FooterCol
-          title="Discover"
+          title="Découvrir"
           items={[
-            { to: "/stories", label: "Success Stories" },
-            { to: "/insights", label: "Insights" },
-            { to: "/join", label: "Join the Network" },
+            { to: "/stories", label: "Témoignages" },
+            { to: "/insights", label: "Analyses" },
+            { to: "/join", label: "Rejoindre le Réseau" },
           ]}
         />
         <FooterCol
           title="Contact"
           items={[
-            { to: "/contact", label: "Book a Consultation" },
-            { to: "/contact", label: "Partnership Inquiries" },
+            { to: "/contact", label: "Prendre rendez-vous" },
+            { to: "/contact", label: "Demande de partenariat" },
             { to: "/contact", label: "LinkedIn" },
           ]}
         />
       </div>
       <div className="border-t border-border">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-          <span>© {new Date().getFullYear()} Atlas &amp; Atlas — All rights reserved</span>
+          <span>© {new Date().getFullYear()} Atlas &amp; Atlas — Tous droits réservés</span>
           <span className="italic font-serif text-sm normal-case tracking-normal">
-            Aspire to return.
+            Aspirer au retour.
           </span>
         </div>
       </div>

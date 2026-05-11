@@ -24,7 +24,7 @@ export function ArticleCard({ slug, category, title, excerpt, readTime }: Props)
       </h3>
       <p className="text-sm text-muted-foreground leading-relaxed mb-6 line-clamp-3">{excerpt}</p>
       <span className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-medium">
-        Read article
+        Lire l'article
         <span className="block w-8 h-px bg-foreground group-hover:w-12 transition-all" />
       </span>
     </Link>
