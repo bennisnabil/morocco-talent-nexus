@@ -35,14 +35,14 @@ const stories = [
   },
   {
     quote:
-      "Atlas n'a pas seulement trouvé mon poste : ils ont piloté toute la stratégie de relocation de ma famille. Le réseau dont j'ai bénéficié à l'arrivée était de classe mondiale.",
+      "Diaspora Talent n'a pas seulement trouvé mon poste : ils ont piloté toute la stratégie de relocation de ma famille. Le réseau dont j'ai bénéficié à l'arrivée était de classe mondiale.",
     name: "Sofia Alaoui",
     role: "Head of Sustainability, OCP Group",
     image: story1,
   },
   {
     quote:
-      "J'avais reçu des offres au Maroc pendant des années, mais rien n'égalait la précision de ce qu'Atlas a mis devant moi. L'adéquation a été immédiate.",
+      "J'avais reçu des offres au Maroc pendant des années, mais rien n'égalait la précision de ce que Diaspora Talent a mis devant moi. L'adéquation a été immédiate.",
     name: "Yassine Tazi",
     role: "Managing Director, Casablanca Finance City",
     image: story2,
