@@ -7,13 +7,13 @@ import { SectionHeading } from "@/components/section-heading";
 export const Route = createFileRoute("/join")({
   head: () => ({
     meta: [
-      { title: "Rejoindre le réseau — Atlas & Atlas" },
+      { title: "Rejoindre le réseau — Diaspora Talent" },
       {
         name: "description",
         content:
           "Postulez à un réseau privé de cadres marocains seniors du monde entier.",
       },
-      { property: "og:title", content: "Rejoindre le réseau — Atlas & Atlas" },
+      { property: "og:title", content: "Rejoindre le réseau — Diaspora Talent" },
       {
         property: "og:description",
         content: "L'adhésion se fait sur candidature. Commencez la vôtre.",

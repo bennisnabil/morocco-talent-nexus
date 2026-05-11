@@ -9,13 +9,13 @@ import { Play } from "lucide-react";
 export const Route = createFileRoute("/stories")({
   head: () => ({
     meta: [
-      { title: "Témoignages — Atlas & Atlas" },
+      { title: "Témoignages — Diaspora Talent" },
       {
         name: "description",
         content:
           "Parcours de la diaspora, retours exécutifs et leaders qui façonnent un Maroc moderne.",
       },
-      { property: "og:title", content: "Témoignages — Atlas & Atlas" },
+      { property: "og:title", content: "Témoignages — Diaspora Talent" },
       {
         property: "og:description",
         content: "De vrais parcours de professionnels marocains seniors qui rentrent au pays.",
@@ -35,14 +35,14 @@ const stories = [
   },
   {
     quote:
-      "Atlas n'a pas seulement trouvé mon poste : ils ont piloté toute la stratégie de relocation de ma famille. Le réseau dont j'ai bénéficié à l'arrivée était de classe mondiale.",
+      "Diaspora Talent n'a pas seulement trouvé mon poste : ils ont piloté toute la stratégie de relocation de ma famille. Le réseau dont j'ai bénéficié à l'arrivée était de classe mondiale.",
     name: "Sofia Alaoui",
     role: "Head of Sustainability, OCP Group",
     image: story1,
   },
   {
     quote:
-      "J'avais reçu des offres au Maroc pendant des années, mais rien n'égalait la précision de ce qu'Atlas a mis devant moi. L'adéquation a été immédiate.",
+      "J'avais reçu des offres au Maroc pendant des années, mais rien n'égalait la précision de ce que Diaspora Talent a mis devant moi. L'adéquation a été immédiate.",
     name: "Yassine Tazi",
     role: "Managing Director, Casablanca Finance City",
     image: story2,

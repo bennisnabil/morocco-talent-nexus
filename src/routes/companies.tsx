@@ -5,13 +5,13 @@ import { CtaButton } from "@/components/cta-button";
 export const Route = createFileRoute("/companies")({
   head: () => ({
     meta: [
-      { title: "Pour les entreprises — Executive Search | Atlas & Atlas" },
+      { title: "Pour les entreprises — Executive Search | Diaspora Talent" },
       {
         name: "description",
         content:
           "Accédez aux talents marocains de classe mondiale. Executive search, cartographie diaspora, recrutement confidentiel et leadership hiring.",
       },
-      { property: "og:title", content: "Pour les entreprises — Atlas & Atlas" },
+      { property: "og:title", content: "Pour les entreprises — Diaspora Talent" },
       {
         property: "og:description",
         content: "Talents exécutifs marocains de calibre international, à la demande.",

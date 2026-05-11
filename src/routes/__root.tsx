@@ -61,13 +61,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Atlas & Atlas — Le réseau mondial des talents marocains" },
+      { title: "Diaspora Talent — Le réseau mondial des talents marocains" },
       {
         name: "description",
         content:
           "Opportunités exécutives, relocation stratégique et accompagnement premium au retour au Maroc pour les professionnels marocains du monde entier.",
       },
-      { property: "og:title", content: "Atlas & Atlas — Le réseau mondial des talents marocains" },
+      { property: "og:title", content: "Diaspora Talent — Le réseau mondial des talents marocains" },
       {
         property: "og:description",
         content:
