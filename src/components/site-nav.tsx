@@ -3,11 +3,11 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { to: "/network", label: "The Network" },
-  { to: "/return", label: "Return to Morocco" },
-  { to: "/companies", label: "For Companies" },
-  { to: "/stories", label: "Stories" },
-  { to: "/insights", label: "Insights" },
+  { to: "/network", label: "Le Réseau" },
+  { to: "/return", label: "Retour au Maroc" },
+  { to: "/companies", label: "Pour les Entreprises" },
+  { to: "/stories", label: "Témoignages" },
+  { to: "/insights", label: "Analyses" },
 ] as const;
 
 export function SiteNav() {
@@ -33,12 +33,12 @@ export function SiteNav() {
             to="/contact"
             className="bg-primary text-primary-foreground px-4 py-2 text-sm tracking-wide hover:opacity-90 transition-opacity"
           >
-            Book a Consultation
+            Prendre rendez-vous
           </Link>
         </nav>
         <button
           className="lg:hidden p-2"
-          aria-label="Open menu"
+          aria-label="Ouvrir le menu"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -62,7 +62,7 @@ export function SiteNav() {
               onClick={() => setOpen(false)}
               className="bg-primary text-primary-foreground px-4 py-3 text-sm tracking-wide text-center mt-2"
             >
-              Book a Consultation
+              Prendre rendez-vous
             </Link>
           </nav>
         </div>

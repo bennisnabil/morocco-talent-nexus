@@ -5,16 +5,16 @@ import { CtaButton } from "@/components/cta-button";
 export const Route = createFileRoute("/companies")({
   head: () => ({
     meta: [
-      { title: "For Companies — Executive Search | Atlas & Atlas" },
+      { title: "Pour les entreprises — Executive Search | Atlas & Atlas" },
       {
         name: "description",
         content:
-          "Access world-class Moroccan talent. Executive search, diaspora mapping, confidential recruitment, and leadership hiring.",
+          "Accédez aux talents marocains de classe mondiale. Executive search, cartographie diaspora, recrutement confidentiel et leadership hiring.",
       },
-      { property: "og:title", content: "For Companies — Atlas & Atlas" },
+      { property: "og:title", content: "Pour les entreprises — Atlas & Atlas" },
       {
         property: "og:description",
-        content: "World-class Moroccan executive talent, on demand.",
+        content: "Talents exécutifs marocains de calibre international, à la demande.",
       },
     ],
   }),
@@ -27,13 +27,13 @@ function CompaniesPage() {
       <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
-            eyebrow="For Companies"
-            title="Access world-class Moroccan talent."
-            subtitle="A private executive search practice for organizations that compete globally and lead locally."
+            eyebrow="Pour les entreprises"
+            title="Accédez aux talents marocains de classe mondiale."
+            subtitle="Une pratique d'executive search privée pour les organisations qui se mesurent au monde et dirigent localement."
             serifClass="text-5xl md:text-7xl"
           />
           <div className="mt-12 flex flex-wrap gap-3">
-            <CtaButton to="/contact">Initiate a Mandate</CtaButton>
+            <CtaButton to="/contact">Initier un mandat</CtaButton>
           </div>
         </div>
       </section>
@@ -41,10 +41,10 @@ function CompaniesPage() {
       <section className="px-6 py-24 lg:py-32">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-1">
           {[
-            ["Executive Search", "Discreet, retained search for C-level, board, and senior leadership roles. We work on a small number of mandates per year — by design."],
-            ["Diaspora Mapping", "Comprehensive intelligence on senior Moroccan executives in financial, tech, industrial, and academic institutions worldwide."],
-            ["Confidential Recruitment", "When discretion is non-negotiable. Off-market mandates handled with absolute confidentiality."],
-            ["Leadership Hiring", "Long-term partnerships with national champions, sovereign actors, and ambitious private groups."],
+            ["Executive Search", "Recherche retenue et discrète pour les rôles C-level, board et leadership senior. Nous menons un nombre limité de mandats par an — c'est un choix."],
+            ["Cartographie diaspora", "Intelligence complète sur les cadres marocains seniors dans les institutions financières, technologiques, industrielles et académiques mondiales."],
+            ["Recrutement confidentiel", "Quand la discrétion ne se négocie pas. Mandats off-market traités en confidentialité absolue."],
+            ["Leadership hiring", "Partenariats long terme avec champions nationaux, acteurs souverains et groupes privés ambitieux."],
           ].map(([t, d], i) => (
             <div
               key={t}
@@ -64,9 +64,9 @@ function CompaniesPage() {
         <div className="max-w-5xl mx-auto text-center">
           <SectionHeading
             align="center"
-            eyebrow="Selectivity"
-            title="We accept fewer than thirty mandates per year."
-            subtitle="Our standards protect both the executives we represent and the organizations we serve. The result: outcomes that endure."
+            eyebrow="Sélectivité"
+            title="Nous acceptons moins de trente mandats par an."
+            subtitle="Nos standards protègent à la fois les cadres que nous représentons et les organisations que nous servons. Le résultat : des décisions qui durent."
           />
         </div>
       </section>
@@ -74,12 +74,12 @@ function CompaniesPage() {
       <section className="px-6 py-24 bg-primary text-primary-foreground text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
-            Initiate a partnership.
+            Initier un partenariat.
           </h2>
           <p className="text-secondary/70 mb-10">
-            Confidential discussions begin with a thirty-minute call.
+            Les discussions confidentielles commencent par un appel de trente minutes.
           </p>
-          <CtaButton to="/contact">Contact our partners</CtaButton>
+          <CtaButton to="/contact">Contacter nos partners</CtaButton>
         </div>
       </section>
     </>

@@ -7,17 +7,17 @@ import { CtaButton } from "@/components/cta-button";
 export const Route = createFileRoute("/return")({
   head: () => ({
     meta: [
-      { title: "Return to Morocco — Premium Concierge | Atlas & Atlas" },
+      { title: "Retour au Maroc — Conciergerie premium | Atlas & Atlas" },
       {
         name: "description",
         content:
-          "Premium return-to-Morocco support: career strategy, relocation, fiscal guidance, networking, and executive onboarding.",
+          "Accompagnement premium au retour au Maroc : stratégie de carrière, relocation, fiscalité, networking et onboarding exécutif.",
       },
-      { property: "og:title", content: "Return to Morocco — Atlas & Atlas" },
+      { property: "og:title", content: "Retour au Maroc — Atlas & Atlas" },
       {
         property: "og:description",
         content:
-          "Concierge service for senior professionals returning to Morocco.",
+          "Conciergerie pour les professionnels seniors qui rentrent au Maroc.",
       },
     ],
   }),
@@ -26,29 +26,29 @@ export const Route = createFileRoute("/return")({
 
 const services = [
   {
-    title: "Career Strategy",
+    title: "Stratégie de carrière",
     description:
-      "We map your international expertise to Morocco's evolving executive landscape — Casablanca, Rabat, Tangier, Marrakech — and align you with the roles that match your trajectory.",
+      "Nous alignons votre expertise internationale sur le paysage exécutif marocain — Casablanca, Rabat, Tanger, Marrakech — pour des rôles à la hauteur de votre trajectoire.",
   },
   {
-    title: "Relocation Assistance",
+    title: "Assistance à la relocation",
     description:
-      "End-to-end logistics: housing in executive corridors, international schooling, family healthcare, vehicles, and the practical infrastructure of returning.",
+      "Logistique de bout en bout : logement dans les corridors exécutifs, scolarité internationale, santé familiale, véhicules et infrastructure pratique du retour.",
   },
   {
-    title: "Tax & Administrative Guidance",
+    title: "Fiscalité & guidance administrative",
     description:
-      "DRI status activation, double taxation treaties, fiscal optimization, banking, and the administrative architecture of becoming a resident again.",
+      "Activation du statut DRI, conventions de double imposition, optimisation fiscale, banque et architecture administrative du retour à la résidence.",
   },
   {
-    title: "Networking Access",
+    title: "Accès au réseau",
     description:
-      "Warm, strategic introductions to Morocco's industrial leaders, family offices, sovereign actors, and the operators shaping the Kingdom's future.",
+      "Introductions stratégiques et personnalisées aux leaders industriels marocains, family offices, acteurs souverains et opérateurs qui façonnent l'avenir du Royaume.",
   },
   {
-    title: "Executive Onboarding",
+    title: "Onboarding exécutif",
     description:
-      "Cultural and operational alignment for your first 100 days. We help you decode the local codes — and lead with immediate impact.",
+      "Alignement culturel et opérationnel pour vos 100 premiers jours. Nous vous aidons à décoder les codes locaux — et à mener avec un impact immédiat.",
   },
 ];
 
@@ -59,21 +59,21 @@ function ReturnPage() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_1fr] gap-16 items-end">
           <div>
             <SectionHeading
-              eyebrow="Return to Morocco"
-              title="The seamless return is engineered, not improvised."
-              subtitle="Five integrated services that transform a complex life transition into a strategic career move."
+              eyebrow="Retour au Maroc"
+              title="Un retour fluide se construit, il ne s'improvise pas."
+              subtitle="Cinq services intégrés qui transforment une transition de vie complexe en mouvement de carrière stratégique."
               serifClass="text-5xl md:text-7xl"
             />
             <div className="mt-12 flex flex-wrap gap-3">
-              <CtaButton to="/contact">Book a Consultation</CtaButton>
+              <CtaButton to="/contact">Prendre rendez-vous</CtaButton>
               <CtaButton to="/join" variant="ghost">
-                Apply to the Network
+                Postuler au réseau
               </CtaButton>
             </div>
           </div>
           <img
             src={returnImg}
-            alt="Modern Moroccan terrace at golden hour"
+            alt="Terrasse marocaine moderne à l'heure dorée"
             width={1080}
             height={1440}
             loading="lazy"
@@ -99,15 +99,15 @@ function ReturnPage() {
       <section className="px-6 py-24 bg-secondary/30 border-y border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
-            eyebrow="The Process"
-            title="A six-month journey, structured around you."
+            eyebrow="Le Process"
+            title="Un parcours de six mois, structuré autour de vous."
           />
           <div className="grid md:grid-cols-4 gap-8 mt-16">
             {[
-              ["M-6", "Initial Audit", "Career mapping and alignment with active mandates."],
-              ["M-3", "Strategic Sequencing", "Fiscal, family, and professional planning."],
-              ["M-0", "Arrival", "Logistics, onboarding, and first introductions."],
-              ["M+3", "Embedding", "Network activation and impact measurement."],
+              ["M-6", "Audit initial", "Cartographie de carrière et alignement avec les mandats actifs."],
+              ["M-3", "Séquençage stratégique", "Planification fiscale, familiale et professionnelle."],
+              ["M-0", "Arrivée", "Logistique, onboarding et premières introductions."],
+              ["M+3", "Ancrage", "Activation du réseau et mesure d'impact."],
             ].map(([m, t, d]) => (
               <div key={t} className="border-t border-border pt-6">
                 <p className="font-serif italic text-2xl text-gold mb-3">{m}</p>
@@ -122,12 +122,12 @@ function ReturnPage() {
       <section className="px-6 py-24 bg-primary text-primary-foreground text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
-            Begin with a private consultation.
+            Commencez par une consultation privée.
           </h2>
           <p className="text-secondary/70 mb-10">
-            One hour, one strategist, complete confidentiality.
+            Une heure, un stratège, confidentialité totale.
           </p>
-          <CtaButton to="/contact">Book a Consultation</CtaButton>
+          <CtaButton to="/contact">Prendre rendez-vous</CtaButton>
         </div>
       </section>
     </>

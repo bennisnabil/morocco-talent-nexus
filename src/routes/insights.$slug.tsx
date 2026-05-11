@@ -11,7 +11,7 @@ export const Route = createFileRoute("/insights/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.article.title} — Atlas & Atlas Insights` },
+          { title: `${loaderData.article.title} — Analyses Atlas & Atlas` },
           { name: "description", content: loaderData.article.excerpt },
           { property: "og:title", content: loaderData.article.title },
           { property: "og:description", content: loaderData.article.excerpt },
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/insights/$slug")({
     <div className="px-6 py-32 text-center">
       <h1 className="font-serif text-4xl mb-4">Article introuvable</h1>
       <Link to="/insights" className="text-primary underline">
-        Retour aux Insights
+        Retour aux analyses
       </Link>
     </div>
   ),
@@ -46,7 +46,7 @@ function ArticlePage() {
             to="/insights"
             className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground hover:text-primary"
           >
-            ← All insights
+            ← Toutes les analyses
           </Link>
           <p className="text-[10px] uppercase tracking-[0.3em] text-gold mt-10 mb-6">
             {article.category} · {article.date}
@@ -65,7 +65,7 @@ function ArticlePage() {
           <div className="mt-16 pt-10 border-t border-border flex flex-wrap items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground">{article.readTime}</p>
             <CtaButton to="/contact" variant="ghost">
-              Discuss this with a partner
+              En discuter avec un partner
             </CtaButton>
           </div>
         </div>
@@ -74,7 +74,7 @@ function ArticlePage() {
       <section className="px-6 py-24 bg-secondary/20 border-t border-border">
         <div className="max-w-7xl mx-auto">
           <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-10">
-            Continue reading
+            Continuer la lecture
           </p>
           <div className="grid md:grid-cols-3 gap-12">
             {others.map((a) => (

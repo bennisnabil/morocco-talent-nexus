@@ -61,17 +61,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Atlas & Atlas — The Global Moroccan Talent Network" },
+      { title: "Atlas & Atlas — Le réseau mondial des talents marocains" },
       {
         name: "description",
         content:
-          "Executive opportunities, strategic relocation, and premium return-to-Morocco support for Moroccan professionals worldwide.",
+          "Opportunités exécutives, relocation stratégique et accompagnement premium au retour au Maroc pour les professionnels marocains du monde entier.",
       },
-      { property: "og:title", content: "Atlas & Atlas — The Global Moroccan Talent Network" },
+      { property: "og:title", content: "Atlas & Atlas — Le réseau mondial des talents marocains" },
       {
         property: "og:description",
         content:
-          "A private executive platform connecting the global Moroccan diaspora with strategic opportunities at home.",
+          "Une plateforme exécutive privée reliant la diaspora marocaine globale aux opportunités stratégiques au Maroc.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -94,7 +94,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <HeadContent />
       </head>
