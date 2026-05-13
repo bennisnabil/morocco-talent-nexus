@@ -85,13 +85,13 @@ function ReturnPage() {
       </section>
 
       {/* Process timeline */}
-      <section className="px-6 py-24 bg-secondary/30 border-y border-border">
+      <section className="px-6 py-16 lg:py-20 bg-secondary/30 border-y border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             eyebrow="Le Process"
             title="Un parcours de six mois, structuré autour de vous."
           />
-          <div className="grid md:grid-cols-4 gap-8 mt-16">
+          <div className="grid md:grid-cols-4 gap-8 mt-12">
             {[
               ["M-6", "Audit initial", "Cartographie de carrière et alignement avec les mandats actifs."],
               ["M-3", "Séquençage stratégique", "Planification fiscale, familiale et professionnelle."],
@@ -108,12 +108,12 @@ function ReturnPage() {
         </div>
       </section>
 
-      <section className="px-6 py-24 bg-primary text-primary-foreground text-center">
+      <section className="px-6 py-16 lg:py-20 bg-primary text-primary-foreground text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
             Commencez par une consultation privée.
           </h2>
-          <p className="text-secondary/70 mb-10">
+          <p className="text-secondary/70 mb-8">
             Une heure, un stratège, confidentialité totale.
           </p>
           <CtaButton to="/contact">Prendre rendez-vous</CtaButton>
