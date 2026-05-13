@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import returnImg from "@/assets/return-morocco.jpg";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
 import { CtaButton } from "@/components/cta-button";
@@ -55,34 +54,24 @@ const services = [
 function ReturnPage() {
   return (
     <>
-      <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_1fr] gap-16 items-end">
-          <div>
-            <SectionHeading
-              eyebrow="Retour au Maroc"
-              title="Un retour fluide se construit, il ne s'improvise pas."
-              subtitle="Cinq services intégrés qui transforment une transition de vie complexe en mouvement de carrière stratégique."
-              serifClass="text-5xl md:text-7xl"
-            />
-            <div className="mt-12 flex flex-wrap gap-3">
-              <CtaButton to="/contact">Prendre rendez-vous</CtaButton>
-              <CtaButton to="/join" variant="ghost">
-                Postuler au réseau
-              </CtaButton>
-            </div>
-          </div>
-          <img
-            src={returnImg}
-            alt="Terrasse marocaine moderne à l'heure dorée"
-            width={1080}
-            height={1440}
-            loading="lazy"
-            className="w-full aspect-[4/5] object-cover ring-1 ring-border"
+      <section className="px-6 pt-20 pb-12 lg:pt-24 border-b border-border">
+        <div className="max-w-5xl mx-auto">
+          <SectionHeading
+            eyebrow="Retour au Maroc"
+            title="Un retour fluide se construit, il ne s'improvise pas."
+            subtitle="Cinq services intégrés qui transforment une transition de vie complexe en mouvement de carrière stratégique."
+            serifClass="text-5xl md:text-6xl"
           />
+          <div className="mt-10 flex flex-wrap gap-3">
+            <CtaButton to="/contact">Prendre rendez-vous</CtaButton>
+            <CtaButton to="/join" variant="ghost">
+              Postuler au réseau
+            </CtaButton>
+          </div>
         </div>
       </section>
 
-      <section className="px-6 py-24 lg:py-32">
+      <section className="px-6 py-16 lg:py-20">
         <div className="max-w-7xl mx-auto space-y-1">
           {services.map((s, i) => (
             <ServiceCard
@@ -96,13 +85,13 @@ function ReturnPage() {
       </section>
 
       {/* Process timeline */}
-      <section className="px-6 py-24 bg-secondary/30 border-y border-border">
+      <section className="px-6 py-16 lg:py-20 bg-secondary/30 border-y border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             eyebrow="Le Process"
             title="Un parcours de six mois, structuré autour de vous."
           />
-          <div className="grid md:grid-cols-4 gap-8 mt-16">
+          <div className="grid md:grid-cols-4 gap-8 mt-12">
             {[
               ["M-6", "Audit initial", "Cartographie de carrière et alignement avec les mandats actifs."],
               ["M-3", "Séquençage stratégique", "Planification fiscale, familiale et professionnelle."],
@@ -119,12 +108,12 @@ function ReturnPage() {
         </div>
       </section>
 
-      <section className="px-6 py-24 bg-primary text-primary-foreground text-center">
+      <section className="px-6 py-16 lg:py-20 bg-primary text-primary-foreground text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
             Commencez par une consultation privée.
           </h2>
-          <p className="text-secondary/70 mb-10">
+          <p className="text-secondary/70 mb-8">
             Une heure, un stratège, confidentialité totale.
           </p>
           <CtaButton to="/contact">Prendre rendez-vous</CtaButton>
