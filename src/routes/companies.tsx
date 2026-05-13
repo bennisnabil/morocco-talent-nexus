@@ -24,7 +24,7 @@ export const Route = createFileRoute("/companies")({
 function CompaniesPage() {
   return (
     <>
-      <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
+      <section className="px-6 pt-20 pb-16 lg:pt-24 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             eyebrow="Pour les entreprises"
@@ -38,7 +38,7 @@ function CompaniesPage() {
         </div>
       </section>
 
-      <section className="px-6 py-24 lg:py-32">
+      <section className="px-6 py-16 lg:py-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-1">
           {[
             ["Executive Search", "Recherche retenue et discrète pour les rôles C-level, board et leadership senior. Nous menons un nombre limité de mandats par an — c'est un choix."],
@@ -60,7 +60,7 @@ function CompaniesPage() {
         </div>
       </section>
 
-      <section className="px-6 py-24 bg-secondary/30 border-y border-border">
+      <section className="px-6 py-16 bg-secondary/30 border-y border-border">
         <div className="max-w-5xl mx-auto text-center">
           <SectionHeading
             align="center"
@@ -71,7 +71,7 @@ function CompaniesPage() {
         </div>
       </section>
 
-      <section className="px-6 py-24 bg-primary text-primary-foreground text-center">
+      <section className="px-6 py-16 bg-primary text-primary-foreground text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-6">
             Initier un partenariat.

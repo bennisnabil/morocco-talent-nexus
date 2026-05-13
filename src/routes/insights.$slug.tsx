@@ -40,7 +40,7 @@ function ArticlePage() {
   const others = articles.filter((a) => a.slug !== article.slug).slice(0, 3);
   return (
     <>
-      <article className="px-6 pt-20 pb-24 lg:pt-28">
+      <article className="px-6 pt-20 pb-16 lg:pt-24">
         <div className="max-w-3xl mx-auto">
           <Link
             to="/insights"
@@ -71,7 +71,7 @@ function ArticlePage() {
         </div>
       </article>
 
-      <section className="px-6 py-24 bg-secondary/20 border-t border-border">
+      <section className="px-6 py-16 bg-secondary/20 border-t border-border">
         <div className="max-w-7xl mx-auto">
           <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-10">
             Continuer la lecture

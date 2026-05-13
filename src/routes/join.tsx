@@ -61,7 +61,7 @@ function JoinPage() {
 
   return (
     <>
-      <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
+      <section className="px-6 pt-20 pb-16 lg:pt-24 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             eyebrow="Postuler au réseau"
@@ -72,7 +72,7 @@ function JoinPage() {
         </div>
       </section>
 
-      <section className="px-6 py-24">
+      <section className="px-6 py-16">
         <div className="max-w-3xl mx-auto">
           <form onSubmit={onSubmit} className="grid md:grid-cols-2 gap-6">
             <Field label="Nom complet" name="name" error={errors.name} />

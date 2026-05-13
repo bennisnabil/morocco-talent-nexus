@@ -25,7 +25,7 @@ export const Route = createFileRoute("/insights")({
 function InsightsPage() {
   return (
     <>
-      <section className="px-6 pt-20 pb-16 lg:pt-28 border-b border-border">
+      <section className="px-6 pt-20 pb-16 lg:pt-24 border-b border-border">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             eyebrow="Analyses"
@@ -36,7 +36,7 @@ function InsightsPage() {
         </div>
       </section>
 
-      <section className="px-6 py-24 lg:py-32">
+      <section className="px-6 py-16 lg:py-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {articles.map((a) => (
             <ArticleCard key={a.slug} {...a} />
