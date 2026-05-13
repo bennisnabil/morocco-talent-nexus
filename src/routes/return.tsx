@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import returnImg from "@/assets/return-morocco.jpg";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
 import { CtaButton } from "@/components/cta-button";
