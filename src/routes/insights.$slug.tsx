@@ -62,7 +62,20 @@ function ArticlePage() {
               <p key={i}>{p}</p>
             ))}
           </div>
-          <div className="mt-16 pt-10 border-t border-border flex flex-wrap items-center justify-between gap-4">
+          <div className="mt-12 pt-8 border-t border-border">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">
+              Source
+            </p>
+            <a
+              href={article.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-serif italic text-lg hover:text-primary underline underline-offset-4 decoration-border hover:decoration-primary"
+            >
+              {article.source} →
+            </a>
+          </div>
+          <div className="mt-10 pt-8 border-t border-border flex flex-wrap items-center justify-between gap-4">
             <p className="text-sm text-muted-foreground">{article.readTime}</p>
             <CtaButton to="/contact" variant="ghost">
               En discuter avec un partner
