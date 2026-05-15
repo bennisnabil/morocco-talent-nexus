@@ -4,9 +4,11 @@ interface Props {
   role: string;
   image?: string;
   variant?: "light" | "dark";
+  source?: string;
+  sourceUrl?: string;
 }
 
-export function Testimonial({ quote, name, role, image, variant = "light" }: Props) {
+export function Testimonial({ quote, name, role, image, variant = "light", source, sourceUrl }: Props) {
   const dark = variant === "dark";
   return (
     <figure
@@ -54,6 +56,18 @@ export function Testimonial({ quote, name, role, image, variant = "light" }: Pro
           </p>
         </div>
       </figcaption>
+      {source && (
+        <p className={`mt-6 pt-4 border-t text-[10px] uppercase tracking-[0.25em] ${dark ? "border-white/10 text-secondary/60" : "border-border text-muted-foreground"}`}>
+          Source ·{" "}
+          {sourceUrl ? (
+            <a href={sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-primary">
+              {source}
+            </a>
+          ) : (
+            source
+          )}
+        </p>
+      )}
     </figure>
   );
 }

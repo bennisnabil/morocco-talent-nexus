@@ -25,27 +25,39 @@ export const Route = createFileRoute("/stories")({
 const stories = [
   {
     quote:
-      "Après 15 ans dans la City de Londres, la transition vers Casablanca a été d'une fluidité totale. J'ai trouvé un poste à la hauteur de mon ambition tout en contribuant à la croissance du Royaume.",
-    name: "Mehdi Karam",
-    role: "Chief Investment Officer, partenaire CFC",
+      "Quand j'ai décidé de rentrer, mes amis m'ont pris pour une folle. La crise du Covid a rebattu les cartes du monde du travail. De plus en plus de gens veulent plus qu'un emploi stable — je contribue à la réalisation de leur rêve.",
+    name: "Layla",
+    role: "Franco-marocaine, ex-agente immobilière à Paris — installée au Maroc depuis 2021",
+    source: "H24info — Décembre 2024",
+    sourceUrl:
+      "https://www.h24info.ma/maroc/investir-au-maroc-ces-mre-qui-ont-decide-de-sauter-le-pas-mag/",
   },
   {
     quote:
-      "Diaspora Talent n'a pas seulement trouvé mon poste : ils ont piloté toute la stratégie de relocation de ma famille. Le réseau dont j'ai bénéficié à l'arrivée était de classe mondiale.",
-    name: "Sofia Alaoui",
-    role: "Head of Sustainability, OCP Group",
+      "Il a failli, à plusieurs reprises, tout abandonner. Mais on s'était tellement investi qu'on ne pouvait se permettre un retour en arrière. En se libérant du salariat, il s'est enchaîné à son restaurant.",
+    name: "Viviane",
+    role: "Épouse de Khalid, ancien chef cuisinier au Canada — restaurateur à Hay Ryad, Rabat",
+    source: "H24info — Décembre 2024",
+    sourceUrl:
+      "https://www.h24info.ma/maroc/investir-au-maroc-ces-mre-qui-ont-decide-de-sauter-le-pas-mag/",
   },
   {
     quote:
-      "J'avais reçu des offres au Maroc pendant des années, mais rien n'égalait la précision de ce que Diaspora Talent a mis devant moi. L'adéquation a été immédiate.",
-    name: "Yassine Tazi",
-    role: "Managing Director, Casablanca Finance City",
+      "J'avais tout calculé. Sur le papier, tout semblait parfait. J'avais décroché un contrat comme consultant, avec l'ambition de créer mon entreprise. Mon erreur, c'était de tout miser sur mon savoir-faire.",
+    name: "Adil",
+    role: "Informaticien marocain, dix ans aux États-Unis — reparti à Orlando après deux ans",
+    source: "H24info — Décembre 2024",
+    sourceUrl:
+      "https://www.h24info.ma/maroc/investir-au-maroc-ces-mre-qui-ont-decide-de-sauter-le-pas-mag/",
   },
   {
     quote:
-      "Ce qui m'a le plus surprise, c'est la profondeur du réseau. En quelques semaines, j'étais en réunion avec des personnes que j'avais cherché à atteindre pendant dix ans.",
-    name: "Nadia El Amrani",
-    role: "Partner, Fonds régional de venture",
+      "Les Marocains du Monde, par leur diversité de compétences et leur expérience acquise à l'étranger, constituent une ressource stratégique pour le Maroc. Leur mobilisation accrue pourrait accélérer la réalisation des projets phares du Royaume.",
+    name: "S.M. le Roi Mohammed VI",
+    role: "Discours du 49e anniversaire de la Marche Verte — Novembre 2024",
+    source: "H24info — Décembre 2024",
+    sourceUrl:
+      "https://www.h24info.ma/maroc/investir-au-maroc-ces-mre-qui-ont-decide-de-sauter-le-pas-mag/",
   },
 ];
 
@@ -57,7 +69,7 @@ function StoriesPage() {
           <SectionHeading
             eyebrow="Témoignages"
             title="Des chemins parcourus. Des futurs construits."
-            subtitle="Un aperçu des cadres qui ont choisi de rentrer — et de ce qu'ils construisent aujourd'hui."
+            subtitle="Paroles authentiques de Marocains du monde, recueillies par la presse marocaine. Aucun témoignage inventé."
             serifClass="text-5xl md:text-6xl"
           />
         </div>
@@ -69,6 +81,9 @@ function StoriesPage() {
             <Testimonial key={s.name} {...s} />
           ))}
         </div>
+        <p className="max-w-3xl mx-auto mt-12 text-xs text-muted-foreground text-center leading-relaxed">
+          Tous les témoignages ci-dessus sont extraits de reportages publiés dans la presse marocaine et sont sourcés. Diaspora Talent ne publie pas de témoignages clients fictifs.
+        </p>
       </section>
 
       <section className="px-6 py-16 lg:py-20 bg-primary text-primary-foreground text-center">
