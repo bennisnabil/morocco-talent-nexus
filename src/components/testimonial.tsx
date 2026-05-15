@@ -4,9 +4,11 @@ interface Props {
   role: string;
   image?: string;
   variant?: "light" | "dark";
+  source?: string;
+  sourceUrl?: string;
 }
 
-export function Testimonial({ quote, name, role, image, variant = "light" }: Props) {
+export function Testimonial({ quote, name, role, image, variant = "light", source, sourceUrl }: Props) {
   const dark = variant === "dark";
   return (
     <figure
