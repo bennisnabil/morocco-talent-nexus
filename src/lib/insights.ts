@@ -6,82 +6,97 @@ export interface Article {
   readTime: string;
   date: string;
   body: string[];
+  source: string;
+  sourceUrl: string;
 }
 
 export const articles: Article[] = [
   {
-    slug: "retour-au-maroc-apres-10-ans",
-    title: "Rentrer au Maroc après 10 ans à l'étranger",
+    slug: "casablanca-rappelle-cerveaux-exiles",
+    title: "Quand Casablanca rappelle ses cerveaux exilés",
     category: "Diaspora",
-    readTime: "8 min de lecture",
-    date: "Mars 2026",
-    excerpt:
-      "Après une décennie à Londres, Paris ou Dubaï, le retour au Maroc est rarement une simple démarche logistique. C'est un réalignement stratégique et émotionnel.",
-    body: [
-      "La décision de rentrer commence rarement par une offre d'emploi. Elle commence par un sentiment — celui que le prochain chapitre s'écrit chez soi, là où ambitions personnelles et professionnelles peuvent enfin converger.",
-      "Nous avons accompagné des centaines de cadres dans cette transition. Le constat est constant : la réussite dépend moins du poste obtenu que de la profondeur de la préparation dans les mois qui précèdent l'arrivée.",
-      "Trois forces façonnent le retour : l'architecture fiscale, l'écosystème familial et le réseau professionnel. En sous-estimer une seule, et l'équation se brise.",
-      "Le paysage exécutif marocain a remarquablement mûri ces dix dernières années. CFC, OCP, le secteur des énergies renouvelables et une nouvelle génération de groupes nationaux se disputent désormais des leaders de calibre international.",
-      "Rentrer n'est pas un pas en arrière. Pour beaucoup, c'est le mouvement le plus stratégique de leur carrière.",
-    ],
-  },
-  {
-    slug: "salaires-executifs-maroc-2026",
-    title: "Salaires des cadres dirigeants au Maroc : repère 2026",
-    category: "Rémunération",
-    readTime: "12 min de lecture",
-    date: "Février 2026",
-    excerpt:
-      "La rémunération des C-level au Maroc a beaucoup évolué. Nous cartographions les packages globaux par secteur et niveau — au-delà du fixe.",
-    body: [
-      "Le salaire de base ne représente plus qu'une composante de la rémunération exécutive au Maroc. Plans long terme, equity et bonus structurés sont devenus standard.",
-      "Dans la finance et au sein des institutions de CFC, la rémunération totale d'un Managing Director dépasse fréquemment 2,5 M MAD, avec des références internationales qui orientent désormais les négociations.",
-      "Le leadership tech — fintech et SaaS en particulier — connaît la pente la plus marquée, combinant fixe compétitif et participation au capital de groupes régionaux.",
-      "Les secteurs industriels et infrastructures restent ancrés dans des plans d'incentive long terme, souvent alignés sur les priorités souveraines de développement.",
-      "Notre repère s'appuie sur plus de 400 placements confidentiels réalisés entre 2024 et 2026.",
-    ],
-  },
-  {
-    slug: "leadership-diaspora-marocaine",
-    title: "Leadership de la diaspora marocaine : une force discrète",
-    category: "Réseau",
     readTime: "6 min de lecture",
-    date: "Janvier 2026",
+    date: "Mai 2025",
+    source: "Le Diplomate",
+    sourceUrl:
+      "https://lediplomate.media/2025/05/casablanca-rappelle-ses-cerveaux-exiles-maroc/olivierdauzon/monde/afrique/",
     excerpt:
-      "De Wall Street à la Silicon Valley, les cadres marocains construisent une carte d'influence globale que le Royaume commence à peine à activer.",
+      "Un vent de reconquête souffle sur la jeunesse diplômée marocaine installée à Paris. De Crédit du Maroc à Managem, les grands groupes déploient des stratégies audacieuses pour rapatrier une élite formée à l'étranger.",
     body: [
-      "On estime à 5 millions le nombre de Marocains résidant à l'étranger, avec une concentration notable de leaders senior dans les institutions financières, technologiques et académiques d'Europe et d'Amérique du Nord.",
-      "Ce qui distingue cette diaspora n'est pas sa taille mais son influence silencieuse. Décideurs, partenaires et allocateurs de capitaux liés au Maroc orientent des décisions bien au-delà de leurs rôles visibles.",
-      "Cartographier ce réseau n'est plus une option pour les organisations marocaines qui cherchent à concourir mondialement — c'est un fondamental.",
+      "Casablanca passe à l'offensive. Les grands groupes de la place — Crédit du Maroc, Bank of Africa, Managem — orchestrent désormais des campagnes structurées pour attirer les cadres marocains formés et expérimentés en Europe.",
+      "Cette dynamique s'appuie sur une nouvelle structure ad hoc qui coordonne les efforts de recrutement à Paris, Londres et Bruxelles, en lien direct avec les directions générales casablancaises.",
+      "Les profils ciblés : finance, ingénierie, tech, conseil. Tous ont en commun une trajectoire internationale et un attachement actif au Royaume.",
+      "L'enjeu dépasse le recrutement. C'est une stratégie de souveraineté économique : capter le capital humain qui structurera la prochaine décennie marocaine.",
     ],
   },
   {
-    slug: "guide-complet-relocation-maroc",
-    title: "Le guide complet de la relocation au Maroc",
-    category: "Relocation",
-    readTime: "15 min de lecture",
-    date: "Décembre 2025",
+    slug: "salaires-dirigeants-maroc-2026",
+    title: "Salaires dirigeants au Maroc en 2026 : le vrai benchmark",
+    category: "Rémunération",
+    readTime: "8 min de lecture",
+    date: "Avril 2026",
+    source: "Xpertize Africa",
+    sourceUrl: "https://xpertize.africa/fr/xri/salaires-dirigeants-maroc-2026-benchmark",
     excerpt:
-      "Du statut DRI aux conventions fiscales, en passant par la scolarité et le logement : un guide opérationnel définitif pour les cadres qui rentrent.",
+      "Près de 60 % des cadres dirigeants au Maroc gagnent au moins un million de dirhams par an. Décryptage des rémunérations CEO, CFO et DRH, des écarts sectoriels et de la fiscalité.",
     body: [
-      "Le cadre DRI offre des avantages significatifs aux résidents qui rentrent — à condition d'être activé correctement dès la première année fiscale.",
-      "Les marchés du logement à Casablanca, Rabat, Tanger et Marrakech ont chacun leurs dynamiques propres. Nous cartographions les corridors exécutifs et les écoles qui structurent les décisions familiales.",
-      "La scolarité internationale — Lycée français, American School, Lycée espagnol — détermine plus que tout autre facteur le choix du quartier.",
-      "L'accès aux soins s'est considérablement étendu, avec des groupes privés qui rejoignent désormais les standards européens dans les grands centres urbains.",
+      "Le seuil du million de dirhams annuels est devenu un repère structurant pour les comités exécutifs marocains. Près de six dirigeants sur dix le franchissent désormais.",
+      "Les écarts sectoriels restent marqués : finance et assurance en tête, suivies par l'industrie exportatrice et la tech. Les fonctions CEO, CFO et DRH concentrent les packages les plus complets.",
+      "La rémunération variable et les plans long terme s'imposent progressivement, alignant les pratiques marocaines sur les standards européens.",
+      "La fiscalité reste un facteur déterminant dans la négociation, en particulier pour les profils qui rentrent de l'étranger sous statut de résident fiscal nouvellement établi.",
     ],
   },
   {
-    slug: "investissement-diaspora-mena",
-    title: "Construire des ponts : l'investissement de la diaspora dans la région MENA",
+    slug: "anciens-mre-chez-eux-ou-expatries",
+    title: "Les anciens MRE se sentent-ils chez eux ou « expatriés » au Maroc ?",
+    category: "Société",
+    readTime: "5 min de lecture",
+    date: "Mars 2025",
+    source: "Jeune Afrique",
+    sourceUrl:
+      "https://www.jeuneafrique.com/1655544/politique/ex-mre-au-maroc-se-sentent-ils-chez-eux-ou-expatries/",
+    excerpt:
+      "Rabat, Casablanca, Marrakech : la nouvelle génération de « repat » redessine la géographie des cadres marocains de retour. Entre attachement au pays et statut hybride, leur intégration n'a rien d'évident.",
+    body: [
+      "Ils ont étudié à Paris, travaillé à Londres ou Montréal, et choisi Rabat ou Casablanca pour le prochain chapitre. Les « repat » forment une nouvelle catégorie sociologique au Maroc.",
+      "Leur retour interroge : sont-ils pleinement chez eux ou une nouvelle forme d'expatriés, plus proches culturellement de leurs anciens collègues européens que de leurs voisins de quartier ?",
+      "Les villes choisies — Rabat pour son calme, Casablanca pour le business, Marrakech pour le cadre — révèlent des arbitrages familiaux et professionnels précis.",
+      "L'intégration professionnelle est rarement le frein principal. Les vrais défis sont scolaires, administratifs et relationnels.",
+    ],
+  },
+  {
+    slug: "diaspora-levier-gouvernance-entreprises",
+    title: "La diaspora marocaine : un levier stratégique pour la gouvernance des entreprises",
+    category: "Leadership",
+    readTime: "7 min de lecture",
+    date: "2025",
+    source: "Alides",
+    sourceUrl:
+      "https://www.alides.org/post/la-diaspora-marocaine-un-levier-strat%C3%A9gique-pour-renforcer-la-gouvernance-des-entreprises",
+    excerpt:
+      "Le Maroc dispose d'une ressource rare : une diaspora qualifiée, influente et attachée à son pays. Mobilisée dans la gouvernance des entreprises, elle peut accélérer le développement économique du Royaume.",
+    body: [
+      "La diaspora marocaine est un actif stratégique sous-exploité. Présente dans les institutions financières, technologiques et académiques d'Europe et d'Amérique du Nord, elle dispose d'une expertise et de réseaux que peu de pays comparables peuvent revendiquer.",
+      "Les conseils d'administration des groupes marocains commencent à s'ouvrir à ces profils internationaux, apportant une exigence de gouvernance alignée sur les standards globaux.",
+      "Au-delà des sièges au conseil, les rôles consultatifs et les missions ponctuelles permettent une mobilisation graduelle, compatible avec les engagements professionnels existants à l'étranger.",
+      "Structurer cette mobilisation est désormais une priorité pour les organisations marocaines qui visent une croissance internationale crédible.",
+    ],
+  },
+  {
+    slug: "mre-investisseurs-strategie-offensive",
+    title: "Investissement des MRE : le Maroc déploie une stratégie offensive",
     category: "Capital",
-    readTime: "9 min de lecture",
-    date: "Novembre 2025",
+    readTime: "6 min de lecture",
+    date: "2025",
+    source: "Hespress",
+    sourceUrl: "https://fr.hespress.com/433389-investissement-des-mre-le-maroc-deploie-une-strategie-offensive.html",
     excerpt:
-      "Comment les cadres marocains à l'étranger déploient capital, expertise et réseaux dans les secteurs les plus stratégiques du Royaume.",
+      "Programmes MDM Invest, Fincome, plateforme dédiée : le Royaume structure une offre pour transformer les transferts de fonds de la diaspora en investissements productifs.",
     body: [
-      "Le capital de la diaspora ne se limite plus à l'immobilier. Une nouvelle génération d'opérateurs co-investit dans des fonds de venture régionaux, des plateformes d'infrastructures et des véhicules ESG.",
-      "Les déploiements les plus efficaces combinent engagement financier et implication opérationnelle — sièges au conseil, rôles consultatifs et mentorat actif.",
-      "Le cadre réglementaire marocain pour les investisseurs résidents à l'étranger s'est clarifié, permettant des flux de capitaux plus confiants.",
+      "Les transferts de fonds des Marocains du monde atteignent des records, mais leur conversion en investissements productifs reste en deçà des attentes. Le gouvernement déploie une réponse coordonnée.",
+      "Les programmes MDM Invest et Fincome sont relancés et complétés par une plateforme dédiée pour accompagner les porteurs de projets résidant à l'étranger.",
+      "Les Centres régionaux d'investissement et la CGEM multiplient les séminaires dans les hubs de la diaspora, de Tanger à Bruxelles.",
+      "L'enjeu : passer d'un capital affectif à un capital opérationnel, structuré autour de véhicules d'investissement clairs et d'un cadre réglementaire stabilisé.",
     ],
   },
 ];
