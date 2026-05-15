@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { ArticleCard } from "@/components/article-card";
 import { articles } from "@/lib/insights";
 
-export const Route = createFileRoute("/insights")({
+export const Route = createFileRoute("/insights/")({
   head: () => ({
     meta: [
       { title: "Analyses — Diaspora Talent" },
