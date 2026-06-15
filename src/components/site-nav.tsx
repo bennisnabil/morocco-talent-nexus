@@ -18,7 +18,7 @@ export function SiteNav() {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
         <Link to="/" className="font-serif italic text-2xl tracking-tight">
-          Diaspora <span className="text-muted-foreground">·</span> Talent
+          DiasporaConnect
         </Link>
         <nav className="hidden lg:flex items-center gap-8 text-sm">
           {links.map((l) => (

@@ -136,7 +136,7 @@ function AdminPage() {
     return (
       <div className="min-h-screen flex items-center justify-center px-6 bg-background">
         <div className="w-full max-w-sm">
-          <p className="font-serif italic text-3xl text-center mb-2">Diaspora · Talent</p>
+          <p className="font-serif italic text-3xl text-center mb-2">DiasporaConnect</p>
           <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground text-center mb-10">
             Accès administrateur
           </p>
@@ -188,7 +188,7 @@ function AdminPage() {
       {/* Header */}
       <div className="border-b border-border px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <span className="font-serif italic text-xl">Diaspora · Talent</span>
+          <span className="font-serif italic text-xl">DiasporaConnect</span>
           <span className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Admin</span>
         </div>
         <div className="flex items-center gap-3">
