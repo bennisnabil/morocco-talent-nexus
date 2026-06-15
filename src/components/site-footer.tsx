@@ -35,6 +35,7 @@ export function SiteFooter() {
             { to: "/calculateur", label: "Calculateur DRI" },
             { to: "/evenements", label: "Événements" },
             { to: "/mon-dossier", label: "Mon dossier" },
+            { to: "/a-propos", label: "Qui sommes-nous" },
             { to: "/team", label: "Notre Équipe" },
             { to: "/join", label: "Rejoindre le Réseau" },
           ]}

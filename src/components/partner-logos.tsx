@@ -1,31 +1,48 @@
 /**
- * PartnerLogos — Social proof strip showing partner & client organizations.
- * Uses text-based logo placeholders styled to match the brand aesthetic.
- * Replace the `logo` field with <img> or SVG imports once real assets are available.
+ * PartnerLogos — Social proof strip showing clients & partners of Gibraltar Consulting.
+ * Source: Gibraltar Consulting presentation — slide "Ils nous font confiance" (slide 20).
  */
 
 interface Partner {
   name: string;
-  category: "recruteur" | "institutionnel" | "ecosysteme";
+  category: "education" | "finance" | "food" | "industrie" | "pharma" | "reseau";
   url?: string;
-  abbr: string;  // Short text used as placeholder logo
 }
 
 const PARTNERS: Partner[] = [
-  { name: "OCP Group", abbr: "OCP", category: "recruteur", url: "https://www.ocpgroup.ma" },
-  { name: "Attijariwafa Bank", abbr: "AWB", category: "recruteur", url: "https://www.attijariwafa.com" },
-  { name: "Casablanca Finance City", abbr: "CFC", category: "institutionnel", url: "https://www.casablancafinancecity.com" },
-  { name: "AMDIE", abbr: "AMDIE", category: "institutionnel", url: "https://www.invest.gov.ma" },
-  { name: "CCME", abbr: "CCME", category: "institutionnel", url: "https://www.ccme.org.ma" },
-  { name: "Maroc Numeric", abbr: "MN", category: "ecosysteme" },
-  { name: "Maroc PME", abbr: "MPME", category: "ecosysteme" },
-  { name: "InQilab", abbr: "INQ", category: "ecosysteme" },
+  // Éducation & Recherche
+  { name: "UM6P", category: "education", url: "https://www.um6p.ma" },
+  { name: "Aradei Capital", category: "education" },
+  { name: "Omnidior", category: "education" },
+  { name: "Tomu Construction", category: "education" },
+  // Financial Services & Insurance
+  { name: "McKinsey & Co", category: "finance", url: "https://www.mckinsey.com" },
+  { name: "Sanlam", category: "finance" },
+  { name: "4FLOW", category: "finance" },
+  { name: "Alpha10X", category: "finance" },
+  { name: "Bankingly", category: "finance" },
+  { name: "Agri Edge", category: "finance" },
+  // Food & Beverage
+  { name: "Aiguebelle", category: "food" },
+  { name: "GIZ", category: "food", url: "https://www.giz.de" },
+  // Industrial / Manufacturing
+  { name: "OCP Solutions", category: "industrie", url: "https://www.ocpgroup.ma" },
+  { name: "Stratëus Group", category: "industrie" },
+  { name: "OZÉ", category: "industrie" },
+  { name: "Bluebirds", category: "industrie" },
+  // Pharma & Healthcare
+  { name: "Megaflex", category: "pharma" },
+  // Réseau
+  { name: "Talentor", category: "reseau", url: "https://www.talentor.com" },
 ];
 
 const CATEGORY_LABEL: Record<Partner["category"], string> = {
-  recruteur: "Entreprises partenaires",
-  institutionnel: "Partenaires institutionnels",
-  ecosysteme: "Écosystème d'innovation",
+  education: "Éducation & Immobilier",
+  finance: "Financial Services & Tech",
+  food: "Food & Développement",
+  industrie: "Industrie & Manufacturing",
+  pharma: "Pharmaceutique & Santé",
+  reseau: "Réseau international",
 };
 
 interface Props {
@@ -35,20 +52,24 @@ interface Props {
   strip?: boolean;
 }
 
+// Partners to show in the strip (most recognizable)
+const STRIP_NAMES = ["UM6P", "McKinsey & Co", "OCP Solutions", "Sanlam", "Aiguebelle", "GIZ", "Talentor", "Alpha10X"];
+
 export function PartnerLogos({ full = false, strip = true }: Props) {
   if (strip) {
+    const stripPartners = PARTNERS.filter((p) => STRIP_NAMES.includes(p.name));
     return (
-      <div className="border-y border-border py-10 overflow-hidden">
+      <div className="border-y border-border py-10">
         <p className="text-center text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-8">
           Ils nous font confiance
         </p>
-        <div className="flex flex-wrap justify-center gap-x-10 gap-y-5">
-          {PARTNERS.map((p) => (
+        <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
+          {stripPartners.map((p) => (
             <LogoChip key={p.name} partner={p} />
           ))}
         </div>
-        <p className="text-center text-[10px] text-muted-foreground/60 mt-8 tracking-wide">
-          Logos indicatifs — partenariats en cours de formalisation
+        <p className="text-center text-[10px] text-muted-foreground/50 mt-6 tracking-wide">
+          Références clients de Gibraltar Consulting
         </p>
       </div>
     );
@@ -60,18 +81,18 @@ export function PartnerLogos({ full = false, strip = true }: Props) {
       <div className="space-y-12">
         {categories.map((cat) => (
           <div key={cat}>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-6">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-5">
               {CATEGORY_LABEL[cat]}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3">
               {PARTNERS.filter((p) => p.category === cat).map((p) => (
                 <LogoChip key={p.name} partner={p} large />
               ))}
             </div>
           </div>
         ))}
-        <p className="text-xs text-muted-foreground/60">
-          Logos indicatifs — partenariats en cours de formalisation.
+        <p className="text-xs text-muted-foreground/60 pt-2">
+          Références clients de Gibraltar Consulting — cabinet partenaire de Diaspora Talent.
         </p>
       </div>
     );
@@ -85,12 +106,12 @@ function LogoChip({ partner, large }: { partner: Partner; large?: boolean }) {
     <div
       title={partner.name}
       className={`
-        border border-border/60 bg-background hover:border-primary/40 transition-colors
+        border border-border/60 bg-background hover:border-primary/50 hover:bg-secondary/30 transition-colors
         flex items-center justify-center font-medium tracking-wide text-muted-foreground hover:text-foreground
-        ${large ? "h-16 px-8 text-sm min-w-[120px]" : "h-10 px-5 text-xs min-w-[80px]"}
+        ${large ? "h-14 px-7 text-sm min-w-[110px]" : "h-10 px-5 text-xs min-w-[80px]"}
       `}
     >
-      {partner.abbr}
+      {partner.name}
     </div>
   );
 

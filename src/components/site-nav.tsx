@@ -9,6 +9,7 @@ const links = [
   { to: "/calculateur", label: "Calculateur DRI" },
   { to: "/evenements", label: "Événements" },
   { to: "/insights", label: "Analyses" },
+  { to: "/a-propos", label: "Qui sommes-nous" },
 ] as const;
 
 export function SiteNav() {
