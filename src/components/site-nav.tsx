@@ -16,35 +16,41 @@ export function SiteNav() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
-        <Link to="/" className="font-serif italic text-2xl tracking-tight">
-          DiasporaConnect
-        </Link>
-        <nav className="hidden lg:flex items-center gap-8 text-sm">
-          {links.map((l) => (
-            <Link
-              key={l.to}
-              to={l.to}
-              className="text-foreground/70 hover:text-primary transition-colors"
-              activeProps={{ className: "text-primary" }}
-            >
-              {l.label}
-            </Link>
-          ))}
+      <div className="px-4 lg:px-8 py-2 flex flex-col gap-0.5">
+        {/* Row 1 — logo + mobile toggle */}
+        <div className="flex items-center justify-between">
+          <Link to="/" className="font-serif italic text-2xl tracking-tight">
+            Diaspora <span className="text-muted-foreground">·</span> Talent
+          </Link>
+          <button
+            className="lg:hidden p-2"
+            aria-label="Ouvrir le menu"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
+        {/* Row 2 — nav links */}
+        <nav className="hidden lg:flex items-center justify-between">
+          <div className="flex items-center gap-6 text-xs tracking-wide">
+            {links.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                className="text-foreground/60 hover:text-primary transition-colors"
+                activeProps={{ className: "text-primary" }}
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
           <Link
             to="/contact"
-            className="bg-primary text-primary-foreground px-4 py-2 text-sm tracking-wide hover:opacity-90 transition-opacity"
+            className="bg-primary text-primary-foreground px-4 py-1.5 text-xs tracking-wide hover:opacity-90 transition-opacity"
           >
             Prendre rendez-vous
           </Link>
         </nav>
-        <button
-          className="lg:hidden p-2"
-          aria-label="Ouvrir le menu"
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
       </div>
       {open && (
         <div className="lg:hidden border-t border-border bg-background animate-fade-in">
