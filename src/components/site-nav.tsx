@@ -33,11 +33,11 @@ export function SiteNav() {
 
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="px-4 lg:px-8 py-2 flex flex-col gap-0.5">
+      <div className="px-4 lg:px-8 py-4 flex flex-col gap-1">
         {/* Row 1 — logo + mobile toggle */}
         <div className="flex items-center justify-between">
-          <Link to="/" className="font-serif italic text-2xl tracking-tight">
-            Diaspora <span className="text-muted-foreground">·</span> Talent
+          <Link to="/" className="font-serif italic text-3xl tracking-tight">
+            DiasporaConnect
           </Link>
           <button
             className="lg:hidden p-2"
