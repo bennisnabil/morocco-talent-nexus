@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as StoriesRouteImport } from './routes/stories'
 import { Route as ReturnRouteImport } from './routes/return'
 import { Route as NetworkRouteImport } from './routes/network'
+import { Route as LegalRouteImport } from './routes/legal'
+import { Route as TeamRouteImport } from './routes/team'
 import { Route as JoinRouteImport } from './routes/join'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CompaniesRouteImport } from './routes/companies'
@@ -22,6 +24,16 @@ import { Route as InsightsSlugRouteImport } from './routes/insights.$slug'
 const StoriesRoute = StoriesRouteImport.update({
   id: '/stories',
   path: '/stories',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalRoute = LegalRouteImport.update({
+  id: '/legal',
+  path: '/legal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeamRoute = TeamRouteImport.update({
+  id: '/team',
+  path: '/team',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReturnRoute = ReturnRouteImport.update({
@@ -70,9 +82,11 @@ export interface FileRoutesByFullPath {
   '/companies': typeof CompaniesRoute
   '/contact': typeof ContactRoute
   '/join': typeof JoinRoute
+  '/legal': typeof LegalRoute
   '/network': typeof NetworkRoute
   '/return': typeof ReturnRoute
   '/stories': typeof StoriesRoute
+  '/team': typeof TeamRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/insights/': typeof InsightsIndexRoute
 }
@@ -81,9 +95,11 @@ export interface FileRoutesByTo {
   '/companies': typeof CompaniesRoute
   '/contact': typeof ContactRoute
   '/join': typeof JoinRoute
+  '/legal': typeof LegalRoute
   '/network': typeof NetworkRoute
   '/return': typeof ReturnRoute
   '/stories': typeof StoriesRoute
+  '/team': typeof TeamRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/insights': typeof InsightsIndexRoute
 }
@@ -93,9 +109,11 @@ export interface FileRoutesById {
   '/companies': typeof CompaniesRoute
   '/contact': typeof ContactRoute
   '/join': typeof JoinRoute
+  '/legal': typeof LegalRoute
   '/network': typeof NetworkRoute
   '/return': typeof ReturnRoute
   '/stories': typeof StoriesRoute
+  '/team': typeof TeamRoute
   '/insights/$slug': typeof InsightsSlugRoute
   '/insights/': typeof InsightsIndexRoute
 }
@@ -106,9 +124,11 @@ export interface FileRouteTypes {
     | '/companies'
     | '/contact'
     | '/join'
+    | '/legal'
     | '/network'
     | '/return'
     | '/stories'
+    | '/team'
     | '/insights/$slug'
     | '/insights/'
   fileRoutesByTo: FileRoutesByTo
@@ -117,9 +137,11 @@ export interface FileRouteTypes {
     | '/companies'
     | '/contact'
     | '/join'
+    | '/legal'
     | '/network'
     | '/return'
     | '/stories'
+    | '/team'
     | '/insights/$slug'
     | '/insights'
   id:
@@ -128,9 +150,11 @@ export interface FileRouteTypes {
     | '/companies'
     | '/contact'
     | '/join'
+    | '/legal'
     | '/network'
     | '/return'
     | '/stories'
+    | '/team'
     | '/insights/$slug'
     | '/insights/'
   fileRoutesById: FileRoutesById
@@ -140,9 +164,11 @@ export interface RootRouteChildren {
   CompaniesRoute: typeof CompaniesRoute
   ContactRoute: typeof ContactRoute
   JoinRoute: typeof JoinRoute
+  LegalRoute: typeof LegalRoute
   NetworkRoute: typeof NetworkRoute
   ReturnRoute: typeof ReturnRoute
   StoriesRoute: typeof StoriesRoute
+  TeamRoute: typeof TeamRoute
   InsightsSlugRoute: typeof InsightsSlugRoute
   InsightsIndexRoute: typeof InsightsIndexRoute
 }
@@ -198,6 +224,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/legal': {
+      id: '/legal'
+      path: '/legal'
+      fullPath: '/legal'
+      preLoaderRoute: typeof LegalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/team': {
+      id: '/team'
+      path: '/team'
+      fullPath: '/team'
+      preLoaderRoute: typeof TeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/insights/': {
       id: '/insights/'
       path: '/insights'
@@ -220,9 +260,11 @@ const rootRouteChildren: RootRouteChildren = {
   CompaniesRoute: CompaniesRoute,
   ContactRoute: ContactRoute,
   JoinRoute: JoinRoute,
+  LegalRoute: LegalRoute,
   NetworkRoute: NetworkRoute,
   ReturnRoute: ReturnRoute,
   StoriesRoute: StoriesRoute,
+  TeamRoute: TeamRoute,
   InsightsSlugRoute: InsightsSlugRoute,
   InsightsIndexRoute: InsightsIndexRoute,
 }

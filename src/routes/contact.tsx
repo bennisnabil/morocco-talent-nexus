@@ -70,6 +70,36 @@ function ContactPage() {
         </div>
       </section>
 
+      {/* Contact info */}
+      <section className="px-6 py-10 border-b border-border bg-secondary/10">
+        <div className="max-w-3xl mx-auto grid sm:grid-cols-3 gap-8 text-sm">
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">Email</p>
+            <a
+              href="mailto:contact@diasporatalent.ma"
+              className="text-foreground/80 hover:text-primary transition-colors"
+            >
+              contact@diasporatalent.ma
+            </a>
+          </div>
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">LinkedIn</p>
+            <a
+              href="https://www.linkedin.com/company/diaspora-talent"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground/80 hover:text-primary transition-colors"
+            >
+              Diaspora Talent ↗
+            </a>
+          </div>
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">Délai de réponse</p>
+            <span className="text-foreground/80">Sous 48 heures ouvrées</span>
+          </div>
+        </div>
+      </section>
+
       <section className="px-6 py-16">
         <div className="max-w-3xl mx-auto">
           <form onSubmit={onSubmit} className="space-y-6">

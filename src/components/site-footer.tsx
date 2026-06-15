@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
+const LINKEDIN_URL = "https://www.linkedin.com/company/diaspora-talent";
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-background">
@@ -23,24 +25,60 @@ export function SiteFooter() {
           items={[
             { to: "/stories", label: "Témoignages" },
             { to: "/insights", label: "Analyses" },
+            { to: "/team", label: "Notre Équipe" },
             { to: "/join", label: "Rejoindre le Réseau" },
           ]}
         />
-        <FooterCol
-          title="Contact"
-          items={[
-            { to: "/contact", label: "Prendre rendez-vous" },
-            { to: "/contact", label: "Demande de partenariat" },
-            { to: "/contact", label: "LinkedIn" },
-          ]}
-        />
+        <div className="space-y-5">
+          <h4 className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground font-medium">
+            Contact
+          </h4>
+          <ul className="space-y-3 text-sm">
+            <li>
+              <Link to="/contact" className="text-foreground/80 hover:text-primary transition-colors">
+                Prendre rendez-vous
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="text-foreground/80 hover:text-primary transition-colors">
+                Demande de partenariat
+              </Link>
+            </li>
+            <li>
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground/80 hover:text-primary transition-colors"
+              >
+                LinkedIn ↗
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:contact@diasporatalent.ma"
+                className="text-foreground/80 hover:text-primary transition-colors"
+              >
+                contact@diasporatalent.ma
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="border-t border-border">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
           <span>© {new Date().getFullYear()} Diaspora Talent — Tous droits réservés</span>
-          <span className="italic font-serif text-sm normal-case tracking-normal">
-            Aspirer au retour.
-          </span>
+          <div className="flex items-center gap-6">
+            <Link to="/legal" className="hover:text-foreground transition-colors">
+              Mentions légales
+            </Link>
+            <Link to="/legal" className="hover:text-foreground transition-colors">
+              Politique de confidentialité
+            </Link>
+            <span className="italic font-serif text-sm normal-case tracking-normal">
+              Aspirer au retour.
+            </span>
+          </div>
         </div>
       </div>
     </footer>
