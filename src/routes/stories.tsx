@@ -6,13 +6,13 @@ import { CtaButton } from "@/components/cta-button";
 export const Route = createFileRoute("/stories")({
   head: () => ({
     meta: [
-      { title: "Témoignages — Diaspora Talent" },
+      { title: "Témoignages — DiasporaConnect" },
       {
         name: "description",
         content:
           "Parcours de la diaspora, retours exécutifs et leaders qui façonnent un Maroc moderne.",
       },
-      { property: "og:title", content: "Témoignages — Diaspora Talent" },
+      { property: "og:title", content: "Témoignages — DiasporaConnect" },
       {
         property: "og:description",
         content: "De vrais parcours de professionnels marocains seniors qui rentrent au pays.",
@@ -82,7 +82,7 @@ function StoriesPage() {
           ))}
         </div>
         <p className="max-w-3xl mx-auto mt-12 text-xs text-muted-foreground text-center leading-relaxed">
-          Tous les témoignages ci-dessus sont extraits de reportages publiés dans la presse marocaine et sont sourcés. Diaspora Talent ne publie pas de témoignages clients fictifs.
+          Tous les témoignages ci-dessus sont extraits de reportages publiés dans la presse marocaine et sont sourcés. DiasporaConnect ne publie pas de témoignages clients fictifs.
         </p>
       </section>
 

@@ -3,11 +3,11 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/legal")({
   head: () => ({
     meta: [
-      { title: "Mentions légales & Confidentialité — Diaspora Talent" },
+      { title: "Mentions légales & Confidentialité — DiasporaConnect" },
       {
         name: "description",
         content:
-          "Mentions légales, politique de confidentialité et informations RGPD de Diaspora Talent.",
+          "Mentions légales, politique de confidentialité et informations RGPD de DiasporaConnect.",
       },
     ],
   }),
@@ -46,28 +46,28 @@ function LegalPage() {
 
           <Section title="Éditeur du site">
             <p>
-              Le site <strong>diasporatalent.ma</strong> est édité par la société{" "}
-              <strong>Diaspora Talent</strong>, réseau privé de mise en relation exécutive
+              Le site <strong>diasporaconnect.ma</strong> est édité par la société{" "}
+              <strong>DiasporaConnect</strong>, réseau privé de mise en relation exécutive
               pour la diaspora marocaine.
             </p>
             <p>
               <strong>Email :</strong>{" "}
               <a
-                href="mailto:contact@diasporatalent.ma"
+                href="mailto:contact@diasporaconnect.ma"
                 className="underline underline-offset-4 hover:text-primary"
               >
-                contact@diasporatalent.ma
+                contact@diasporaconnect.ma
               </a>
             </p>
             <p>
               <strong>LinkedIn :</strong>{" "}
               <a
-                href="https://www.linkedin.com/company/diaspora-talent"
+                href="https://www.linkedin.com/company/diasporaconnect"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline underline-offset-4 hover:text-primary"
               >
-                linkedin.com/company/diaspora-talent
+                linkedin.com/company/diasporaconnect
               </a>
             </p>
           </Section>
@@ -77,10 +77,10 @@ function LegalPage() {
               Ce site est hébergé par des services cloud tiers. En cas de demande relative à
               l'infrastructure, contactez-nous à{" "}
               <a
-                href="mailto:contact@diasporatalent.ma"
+                href="mailto:contact@diasporaconnect.ma"
                 className="underline underline-offset-4 hover:text-primary"
               >
-                contact@diasporatalent.ma
+                contact@diasporaconnect.ma
               </a>
               .
             </p>
@@ -89,19 +89,19 @@ function LegalPage() {
           <Section title="Propriété intellectuelle">
             <p>
               L'ensemble des contenus présents sur ce site (textes, visuels, structure, code)
-              sont la propriété exclusive de Diaspora Talent, sauf mention contraire. Toute
+              sont la propriété exclusive de DiasporaConnect, sauf mention contraire. Toute
               reproduction, même partielle, est interdite sans autorisation écrite préalable.
             </p>
             <p>
               Les témoignages et articles mentionnant des sources tierces (presse marocaine,
               institutions) sont utilisés à titre informatif et renvoient vers leurs sources
-              originales. Diaspora Talent ne revendique aucun droit sur ces contenus externes.
+              originales. DiasporaConnect ne revendique aucun droit sur ces contenus externes.
             </p>
           </Section>
 
           <Section title="Politique de confidentialité">
             <p>
-              Diaspora Talent s'engage à protéger les données personnelles de ses utilisateurs
+              DiasporaConnect s'engage à protéger les données personnelles de ses utilisateurs
               conformément au Règlement Général sur la Protection des Données (RGPD —
               Règlement UE 2016/679) et à la loi marocaine n° 09-08 relative à la protection
               des personnes physiques à l'égard du traitement des données à caractère
@@ -125,7 +125,7 @@ function LegalPage() {
               Finalités du traitement
             </h3>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Traitement de votre candidature au réseau Diaspora Talent</li>
+              <li>Traitement de votre candidature au réseau DiasporaConnect</li>
               <li>Réponse à vos demandes de contact ou de rendez-vous</li>
               <li>Correspondance relative aux services proposés</li>
             </ul>
@@ -158,10 +158,10 @@ function LegalPage() {
               d'effacement, de limitation, de portabilité et d'opposition concernant vos
               données. Pour exercer ces droits, contactez-nous à{" "}
               <a
-                href="mailto:contact@diasporatalent.ma"
+                href="mailto:contact@diasporaconnect.ma"
                 className="underline underline-offset-4 hover:text-primary"
               >
-                contact@diasporatalent.ma
+                contact@diasporaconnect.ma
               </a>
               . Nous répondons sous 30 jours.
             </p>
@@ -181,7 +181,7 @@ function LegalPage() {
 
           <Section title="Limitation de responsabilité">
             <p>
-              Diaspora Talent s'efforce de maintenir les informations publiées sur ce site
+              DiasporaConnect s'efforce de maintenir les informations publiées sur ce site
               exactes et à jour. Cependant, nous ne garantissons pas l'exhaustivité ou
               l'exactitude de l'ensemble des contenus. Les informations présentes sur ce site
               sont fournies à titre indicatif et ne constituent pas un conseil juridique,
@@ -198,10 +198,10 @@ function LegalPage() {
             <p className="mt-6 text-xs text-muted-foreground">
               Pour toute question relative à cette page :{" "}
               <a
-                href="mailto:contact@diasporatalent.ma"
+                href="mailto:contact@diasporaconnect.ma"
                 className="underline underline-offset-4 hover:text-primary"
               >
-                contact@diasporatalent.ma
+                contact@diasporaconnect.ma
               </a>
             </p>
           </Section>

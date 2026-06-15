@@ -6,13 +6,13 @@ import { PartnerLogos } from "@/components/partner-logos";
 export const Route = createFileRoute("/companies")({
   head: () => ({
     meta: [
-      { title: "Pour les entreprises — Executive Search | Diaspora Talent" },
+      { title: "Pour les entreprises — Executive Search | DiasporaConnect" },
       {
         name: "description",
         content:
           "Accédez aux talents marocains de classe mondiale. Executive search, cartographie diaspora, recrutement confidentiel et leadership hiring.",
       },
-      { property: "og:title", content: "Pour les entreprises — Diaspora Talent" },
+      { property: "og:title", content: "Pour les entreprises — DiasporaConnect" },
       {
         property: "og:description",
         content: "Talents exécutifs marocains de calibre international, à la demande.",

@@ -5,13 +5,13 @@ import { CtaButton } from "@/components/cta-button";
 export const Route = createFileRoute("/team")({
   head: () => ({
     meta: [
-      { title: "Notre Équipe — Diaspora Talent" },
+      { title: "Notre Équipe — DiasporaConnect" },
       {
         name: "description",
         content:
-          "Les partners et conseillers de Diaspora Talent — des professionnels marocains qui ont eux-mêmes vécu la transition internationale.",
+          "Les partners et conseillers de DiasporaConnect — des professionnels marocains qui ont eux-mêmes vécu la transition internationale.",
       },
-      { property: "og:title", content: "Notre Équipe — Diaspora Talent" },
+      { property: "og:title", content: "Notre Équipe — DiasporaConnect" },
       {
         property: "og:description",
         content:
@@ -27,7 +27,7 @@ const team = [
     name: "À compléter",
     role: "Managing Partner",
     bio: "Parcours international en finance d'entreprise et executive search. A accompagné des transitions de carrière entre l'Europe et le Maghreb pendant plus d'une décennie.",
-    linkedin: "https://www.linkedin.com/company/diaspora-talent",
+    linkedin: "https://www.linkedin.com/company/diasporaconnect",
     location: "Casablanca · Paris",
     sectors: ["Finance", "Executive Search"],
   },
@@ -35,7 +35,7 @@ const team = [
     name: "À compléter",
     role: "Partner — Retour & Relocation",
     bio: "Ancienne cadre MRE rentrée au Maroc après 12 ans à Londres. Spécialiste des dispositifs DRI, de la fiscalité des non-résidents et de l'accompagnement à la relocation familiale.",
-    linkedin: "https://www.linkedin.com/company/diaspora-talent",
+    linkedin: "https://www.linkedin.com/company/diasporaconnect",
     location: "Rabat · Londres",
     sectors: ["Droit fiscal", "Relocation", "ESG"],
   },
@@ -43,7 +43,7 @@ const team = [
     name: "À compléter",
     role: "Partner — Tech & Innovation",
     bio: "Ingénieur et entrepreneur, passé par Silicon Valley et Berlin. Accompagne les profils tech et deep-tech dans leur retour au Maroc et leur insertion dans l'écosystème startup marocain.",
-    linkedin: "https://www.linkedin.com/company/diaspora-talent",
+    linkedin: "https://www.linkedin.com/company/diasporaconnect",
     location: "Casablanca · San Francisco",
     sectors: ["Tech", "Startup", "Venture"],
   },
@@ -75,7 +75,7 @@ function TeamPage() {
           <SectionHeading
             eyebrow="Notre Équipe"
             title="Des partners qui ont navigué les deux mondes."
-            subtitle="Chaque membre de l'équipe Diaspora Talent a lui-même vécu la transition internationale — c'est notre différence fondamentale."
+            subtitle="Chaque membre de l'équipe DiasporaConnect a lui-même vécu la transition internationale — c'est notre différence fondamentale."
             serifClass="text-5xl md:text-6xl"
           />
         </div>

@@ -5,13 +5,13 @@ import { SectionHeading } from "@/components/section-heading";
 export const Route = createFileRoute("/mon-dossier")({
   head: () => ({
     meta: [
-      { title: "Mon dossier — Diaspora Talent" },
+      { title: "Mon dossier — DiasporaConnect" },
       {
         name: "description",
         content:
-          "Suivez l'état de votre candidature au réseau Diaspora Talent. Accédez à votre dossier par email.",
+          "Suivez l'état de votre candidature au réseau DiasporaConnect. Accédez à votre dossier par email.",
       },
-      { property: "og:title", content: "Mon dossier — Diaspora Talent" },
+      { property: "og:title", content: "Mon dossier — DiasporaConnect" },
     ],
   }),
   component: MonDossierPage,
@@ -49,7 +49,7 @@ const STATUS_CONFIG: Record<
   accepted: {
     label: "Acceptée ✓",
     color: "text-green-700 bg-green-50 border-green-200",
-    desc: "Félicitations — vous êtes admis(e) au réseau Diaspora Talent. Un partner va vous contacter.",
+    desc: "Félicitations — vous êtes admis(e) au réseau DiasporaConnect. Un partner va vous contacter.",
   },
   refused: {
     label: "Non retenue",
@@ -284,8 +284,8 @@ function MonDossierPage() {
 
               <p className="text-xs text-muted-foreground text-center">
                 Une question ? Contactez-nous à{" "}
-                <a href="mailto:contact@diasporatalent.ma" className="underline">
-                  contact@diasporatalent.ma
+                <a href="mailto:contact@diasporaconnect.ma" className="underline">
+                  contact@diasporaconnect.ma
                 </a>
               </p>
             </div>

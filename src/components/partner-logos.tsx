@@ -92,7 +92,7 @@ export function PartnerLogos({ full = false, strip = true }: Props) {
           </div>
         ))}
         <p className="text-xs text-muted-foreground/60 pt-2">
-          Références clients de Gibraltar Consulting — cabinet partenaire de Diaspora Talent.
+          Références clients de Gibraltar Consulting — cabinet partenaire de DiasporaConnect.
         </p>
       </div>
     );

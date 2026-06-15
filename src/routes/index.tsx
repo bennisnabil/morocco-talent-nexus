@@ -11,7 +11,7 @@ import { PartnerLogos } from "@/components/partner-logos";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Diaspora Talent — Le réseau mondial des talents marocains" },
+      { title: "DiasporaConnect — Le réseau mondial des talents marocains" },
       {
         name: "description",
         content:
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Diaspora Talent — Le réseau mondial des talents marocains",
+        content: "DiasporaConnect — Le réseau mondial des talents marocains",
       },
       {
         property: "og:description",

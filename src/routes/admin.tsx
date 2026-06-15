@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from "react";
 
 export const Route = createFileRoute("/admin")({
   head: () => ({
-    meta: [{ title: "Admin — Diaspora Talent" }],
+    meta: [{ title: "Admin — DiasporaConnect" }],
   }),
   component: AdminPage,
 });
@@ -76,7 +76,7 @@ function exportCSV(data: Candidature[]) {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = `diaspora-talent-${new Date().toISOString().slice(0, 10)}.csv`;
+  a.download = `diasporaconnect-${new Date().toISOString().slice(0, 10)}.csv`;
   a.click();
   URL.revokeObjectURL(url);
 }

@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 
-const LINKEDIN_URL = "https://www.linkedin.com/company/diaspora-talent";
+const LINKEDIN_URL = "https://www.linkedin.com/company/diasporaconnect";
 
 export function SiteFooter() {
   return (
@@ -14,7 +14,7 @@ export function SiteFooter() {
       </div>
       <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-[2fr_1fr_1fr_1fr] gap-12">
         <div className="space-y-6">
-          <div className="font-serif italic text-2xl tracking-tight">Diaspora Talent</div>
+          <div className="font-serif italic text-2xl tracking-tight">DiasporaConnect</div>
           <p className="text-sm text-muted-foreground max-w-[36ch]">
             Le réseau privé de référence reliant la diaspora marocaine d'excellence à l'avenir stratégique du Royaume.
           </p>
@@ -67,10 +67,10 @@ export function SiteFooter() {
             </li>
             <li>
               <a
-                href="mailto:contact@diasporatalent.ma"
+                href="mailto:contact@diasporaconnect.ma"
                 className="text-foreground/80 hover:text-primary transition-colors"
               >
-                contact@diasporatalent.ma
+                contact@diasporaconnect.ma
               </a>
             </li>
           </ul>
@@ -78,7 +78,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-border">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-          <span>© {new Date().getFullYear()} Diaspora Talent — Tous droits réservés</span>
+          <span>© {new Date().getFullYear()} DiasporaConnect — Tous droits réservés</span>
           <div className="flex items-center gap-6">
             <Link to="/legal" className="hover:text-foreground transition-colors">
               Mentions légales

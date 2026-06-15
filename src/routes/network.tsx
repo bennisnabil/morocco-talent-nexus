@@ -7,13 +7,13 @@ import { DiasporaMap } from "@/components/diaspora-map";
 export const Route = createFileRoute("/network")({
   head: () => ({
     meta: [
-      { title: "Plateforme Talents — Diaspora Talent" },
+      { title: "Plateforme Talents — DiasporaConnect" },
       {
         name: "description",
         content:
           "Un réseau privé de cadres marocains du monde entier. Opportunités confidentielles, matching stratégique, mandats de leadership.",
       },
-      { property: "og:title", content: "La Plateforme Talents — Diaspora Talent" },
+      { property: "og:title", content: "La Plateforme Talents — DiasporaConnect" },
       {
         property: "og:description",
         content:
