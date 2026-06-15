@@ -11,7 +11,7 @@ import { PartnerLogos } from "@/components/partner-logos";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "DiasporaConnect — Le réseau mondial des talents marocains" },
+      { title: "Diaspora Talent — Le réseau mondial des talents marocains" },
       {
         name: "description",
         content:
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "DiasporaConnect — Le réseau mondial des talents marocains",
+        content: "Diaspora Talent — Le réseau mondial des talents marocains",
       },
       {
         property: "og:description",
@@ -187,8 +187,8 @@ function HomePage() {
             role="Directrice ESG, Fonds Régional d'Infrastructures"
           />
           <div className="mt-8">
-            <CtaButton to="/stories" variant="ghost">
-              Lire d'autres parcours
+            <CtaButton to="/join">
+              Rejoindre le réseau
             </CtaButton>
           </div>
         </div>
