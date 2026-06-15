@@ -18,10 +18,28 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as JoinRouteImport } from './routes/join'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CompaniesRouteImport } from './routes/companies'
+import { Route as CalculateurRouteImport } from './routes/calculateur'
+import { Route as EvenementsRouteImport } from './routes/evenements'
+import { Route as MonDossierRouteImport } from './routes/mon-dossier'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as InsightsIndexRouteImport } from './routes/insights.index'
 import { Route as InsightsSlugRouteImport } from './routes/insights.$slug'
 
+const CalculateurRoute = CalculateurRouteImport.update({
+  id: '/calculateur',
+  path: '/calculateur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EvenementsRoute = EvenementsRouteImport.update({
+  id: '/evenements',
+  path: '/evenements',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MonDossierRoute = MonDossierRouteImport.update({
+  id: '/mon-dossier',
+  path: '/mon-dossier',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StoriesRoute = StoriesRouteImport.update({
   id: '/stories',
   path: '/stories',
@@ -86,10 +104,13 @@ const InsightsSlugRoute = InsightsSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/calculateur': typeof CalculateurRoute
   '/companies': typeof CompaniesRoute
   '/contact': typeof ContactRoute
+  '/evenements': typeof EvenementsRoute
   '/join': typeof JoinRoute
   '/legal': typeof LegalRoute
+  '/mon-dossier': typeof MonDossierRoute
   '/network': typeof NetworkRoute
   '/return': typeof ReturnRoute
   '/stories': typeof StoriesRoute
@@ -100,10 +121,13 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/calculateur': typeof CalculateurRoute
   '/companies': typeof CompaniesRoute
   '/contact': typeof ContactRoute
+  '/evenements': typeof EvenementsRoute
   '/join': typeof JoinRoute
   '/legal': typeof LegalRoute
+  '/mon-dossier': typeof MonDossierRoute
   '/network': typeof NetworkRoute
   '/return': typeof ReturnRoute
   '/stories': typeof StoriesRoute
@@ -115,10 +139,13 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/admin': typeof AdminRoute
+  '/calculateur': typeof CalculateurRoute
   '/companies': typeof CompaniesRoute
   '/contact': typeof ContactRoute
+  '/evenements': typeof EvenementsRoute
   '/join': typeof JoinRoute
   '/legal': typeof LegalRoute
+  '/mon-dossier': typeof MonDossierRoute
   '/network': typeof NetworkRoute
   '/return': typeof ReturnRoute
   '/stories': typeof StoriesRoute
@@ -131,10 +158,13 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/admin'
+    | '/calculateur'
     | '/companies'
     | '/contact'
+    | '/evenements'
     | '/join'
     | '/legal'
+    | '/mon-dossier'
     | '/network'
     | '/return'
     | '/stories'
@@ -145,10 +175,13 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/admin'
+    | '/calculateur'
     | '/companies'
     | '/contact'
+    | '/evenements'
     | '/join'
     | '/legal'
+    | '/mon-dossier'
     | '/network'
     | '/return'
     | '/stories'
@@ -159,10 +192,13 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/admin'
+    | '/calculateur'
     | '/companies'
     | '/contact'
+    | '/evenements'
     | '/join'
     | '/legal'
+    | '/mon-dossier'
     | '/network'
     | '/return'
     | '/stories'
@@ -174,10 +210,13 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminRoute: typeof AdminRoute
+  CalculateurRoute: typeof CalculateurRoute
   CompaniesRoute: typeof CompaniesRoute
   ContactRoute: typeof ContactRoute
+  EvenementsRoute: typeof EvenementsRoute
   JoinRoute: typeof JoinRoute
   LegalRoute: typeof LegalRoute
+  MonDossierRoute: typeof MonDossierRoute
   NetworkRoute: typeof NetworkRoute
   ReturnRoute: typeof ReturnRoute
   StoriesRoute: typeof StoriesRoute
@@ -230,6 +269,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CompaniesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/calculateur': {
+      id: '/calculateur'
+      path: '/calculateur'
+      fullPath: '/calculateur'
+      preLoaderRoute: typeof CalculateurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/evenements': {
+      id: '/evenements'
+      path: '/evenements'
+      fullPath: '/evenements'
+      preLoaderRoute: typeof EvenementsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mon-dossier': {
+      id: '/mon-dossier'
+      path: '/mon-dossier'
+      fullPath: '/mon-dossier'
+      preLoaderRoute: typeof MonDossierRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -278,10 +338,13 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdminRoute: AdminRoute,
+  CalculateurRoute: CalculateurRoute,
   CompaniesRoute: CompaniesRoute,
   ContactRoute: ContactRoute,
+  EvenementsRoute: EvenementsRoute,
   JoinRoute: JoinRoute,
   LegalRoute: LegalRoute,
+  MonDossierRoute: MonDossierRoute,
   NetworkRoute: NetworkRoute,
   ReturnRoute: ReturnRoute,
   StoriesRoute: StoriesRoute,

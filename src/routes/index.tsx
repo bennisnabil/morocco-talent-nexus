@@ -6,6 +6,7 @@ import { Testimonial } from "@/components/testimonial";
 import { ArticleCard } from "@/components/article-card";
 import { CtaButton } from "@/components/cta-button";
 import { articles } from "@/lib/insights";
+import { PartnerLogos } from "@/components/partner-logos";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -210,6 +211,13 @@ function HomePage() {
               <ArticleCard key={a.slug} {...a} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Partners */}
+      <section className="px-6">
+        <div className="max-w-7xl mx-auto">
+          <PartnerLogos strip />
         </div>
       </section>
     </>

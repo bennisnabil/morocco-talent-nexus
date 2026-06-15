@@ -1,10 +1,17 @@
 import { Link } from "@tanstack/react-router";
+import { NewsletterSignup } from "@/components/newsletter-signup";
 
 const LINKEDIN_URL = "https://www.linkedin.com/company/diaspora-talent";
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-background">
+      {/* Newsletter band */}
+      <div className="border-b border-border bg-primary text-primary-foreground px-6 py-12">
+        <div className="max-w-2xl mx-auto">
+          <NewsletterSignup variant="dark" />
+        </div>
+      </div>
       <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-[2fr_1fr_1fr_1fr] gap-12">
         <div className="space-y-6">
           <div className="font-serif italic text-2xl tracking-tight">Diaspora Talent</div>
@@ -25,6 +32,9 @@ export function SiteFooter() {
           items={[
             { to: "/stories", label: "Témoignages" },
             { to: "/insights", label: "Analyses" },
+            { to: "/calculateur", label: "Calculateur DRI" },
+            { to: "/evenements", label: "Événements" },
+            { to: "/mon-dossier", label: "Mon dossier" },
             { to: "/team", label: "Notre Équipe" },
             { to: "/join", label: "Rejoindre le Réseau" },
           ]}

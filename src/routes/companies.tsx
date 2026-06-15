@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaButton } from "@/components/cta-button";
+import { PartnerLogos } from "@/components/partner-logos";
 
 export const Route = createFileRoute("/companies")({
   head: () => ({
@@ -68,6 +69,12 @@ function CompaniesPage() {
             title="Nous acceptons moins de trente mandats par an."
             subtitle="Nos standards protègent à la fois les cadres que nous représentons et les organisations que nous servons. Le résultat : des décisions qui durent."
           />
+        </div>
+      </section>
+
+      <section className="px-6 py-12 border-b border-border">
+        <div className="max-w-7xl mx-auto">
+          <PartnerLogos full />
         </div>
       </section>
 

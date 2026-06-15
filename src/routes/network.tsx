@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SectionHeading } from "@/components/section-heading";
 import { SectorGrid } from "@/components/sector-grid";
 import { CtaButton } from "@/components/cta-button";
+import { DiasporaMap } from "@/components/diaspora-map";
 
 export const Route = createFileRoute("/network")({
   head: () => ({
@@ -81,6 +82,24 @@ function NetworkPage() {
           <div className="flex flex-wrap gap-3 justify-center">
             <CtaButton to="/join">Postuler au réseau</CtaButton>
           </div>
+        </div>
+      </section>
+
+      {/* Map section */}
+      <section className="px-6 py-16 border-t border-border">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-10">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mb-3">
+              Présence mondiale
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-3">
+              La diaspora marocaine en temps réel.
+            </h2>
+            <p className="text-sm text-muted-foreground max-w-xl">
+              Nos membres sont présents dans plus de 30 pays. Survolez une ville pour découvrir la communauté locale.
+            </p>
+          </div>
+          <DiasporaMap />
         </div>
       </section>
     </>

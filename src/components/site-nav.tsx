@@ -6,7 +6,8 @@ const links = [
   { to: "/network", label: "Le Réseau" },
   { to: "/return", label: "Retour au Maroc" },
   { to: "/companies", label: "Pour les Entreprises" },
-  { to: "/stories", label: "Témoignages" },
+  { to: "/calculateur", label: "Calculateur DRI" },
+  { to: "/evenements", label: "Événements" },
   { to: "/insights", label: "Analyses" },
 ] as const;
 
