@@ -16,7 +16,7 @@ export function SiteNav() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
         <Link to="/" className="font-serif italic text-2xl tracking-tight">
           Diaspora <span className="text-muted-foreground">·</span> Talent
         </Link>

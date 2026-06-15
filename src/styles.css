@@ -6,13 +6,14 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Diaspora Talent — Dossier Editorial design system.
+ * Diaspora Talent — Gibraltar Consulting design system.
  * All colors in oklch. Reference hex (do not use directly):
- *   forest #1b3022 — primary
- *   sand   #e8dfd3 — secondary
- *   paper  #fdfcfb — background
+ *   navy   #0e2a47 — primary (Gibraltar dark navy)
+ *   cobalt #163f66 — navy mid
+ *   paper  #fbfdfd — background
  *   ink    #121212 — foreground
- *   gold   #b89356 — accent
+ *   crimson #9a0d0d — accent (Gibraltar red)
+ *   mist   #d6dee4 — secondary (light blue-gray)
  */
 
 @theme inline {
@@ -42,11 +43,17 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
 
-  --color-forest: var(--forest);
-  --color-sand: var(--sand);
+  --color-navy: var(--navy);
+  --color-cobalt: var(--cobalt);
+  --color-mist: var(--mist);
   --color-paper: var(--paper);
   --color-ink: var(--ink);
-  --color-gold: var(--gold);
+  --color-crimson: var(--crimson);
+
+  /* Keep legacy aliases so existing components don't break */
+  --color-forest: var(--navy);
+  --color-sand: var(--mist);
+  --color-gold: var(--crimson);
 
   --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -58,11 +65,13 @@
 :root {
   --radius: 4px;
 
-  --paper: oklch(0.99 0.004 80);
-  --ink: oklch(0.18 0.005 80);
-  --forest: oklch(0.28 0.04 155);
-  --sand: oklch(0.9 0.022 80);
-  --gold: oklch(0.66 0.09 75);
+  /* Gibraltar Consulting palette */
+  --navy:    oklch(0.280 0.0634 251.8);   /* #0e2a47 */
+  --cobalt:  oklch(0.360 0.0816 250.3);   /* #163f66 */
+  --crimson: oklch(0.436 0.1712 28.3);    /* #9a0d0d */
+  --mist:    oklch(0.896 0.0120 240.1);   /* #d6dee4 */
+  --paper:   oklch(0.993 0.0022 199.2);   /* #fbfdfd */
+  --ink:     oklch(0.18  0.010  252.0);   /* near-black with navy tint */
 
   --background: var(--paper);
   --foreground: var(--ink);
@@ -70,37 +79,37 @@
   --card-foreground: var(--ink);
   --popover: var(--paper);
   --popover-foreground: var(--ink);
-  --primary: var(--forest);
-  --primary-foreground: var(--sand);
-  --secondary: var(--sand);
-  --secondary-foreground: var(--forest);
-  --muted: oklch(0.95 0.01 80);
-  --muted-foreground: oklch(0.45 0.01 80);
-  --accent: var(--sand);
-  --accent-foreground: var(--forest);
+  --primary: var(--navy);
+  --primary-foreground: var(--paper);
+  --secondary: var(--mist);
+  --secondary-foreground: var(--navy);
+  --muted: oklch(0.95 0.008 240);
+  --muted-foreground: oklch(0.45 0.012 250);
+  --accent: var(--crimson);
+  --accent-foreground: var(--paper);
   --destructive: oklch(0.55 0.2 27);
   --destructive-foreground: var(--paper);
-  --border: oklch(0.18 0.005 80 / 0.08);
-  --input: oklch(0.18 0.005 80 / 0.12);
-  --ring: var(--forest);
+  --border: oklch(0.280 0.0634 251.8 / 0.10);
+  --input:  oklch(0.280 0.0634 251.8 / 0.12);
+  --ring: var(--navy);
 }
 
 .dark {
   --background: var(--ink);
   --foreground: var(--paper);
-  --card: oklch(0.22 0.005 80);
+  --card: oklch(0.22 0.030 252);
   --card-foreground: var(--paper);
   --popover: var(--ink);
   --popover-foreground: var(--paper);
-  --primary: var(--sand);
-  --primary-foreground: var(--forest);
-  --secondary: var(--forest);
-  --secondary-foreground: var(--sand);
-  --muted: oklch(0.25 0.005 80);
-  --muted-foreground: oklch(0.65 0.01 80);
-  --accent: var(--forest);
-  --accent-foreground: var(--sand);
-  --border: oklch(1 0 0 / 0.1);
+  --primary: var(--mist);
+  --primary-foreground: var(--navy);
+  --secondary: var(--cobalt);
+  --secondary-foreground: var(--paper);
+  --muted: oklch(0.25 0.020 252);
+  --muted-foreground: oklch(0.65 0.015 240);
+  --accent: var(--crimson);
+  --accent-foreground: var(--paper);
+  --border: oklch(1 0 0 / 0.10);
   --input: oklch(1 0 0 / 0.12);
 }
 
