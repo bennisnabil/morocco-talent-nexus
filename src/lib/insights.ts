@@ -99,6 +99,74 @@ export const articles: Article[] = [
       "L'enjeu : passer d'un capital affectif à un capital opérationnel, structuré autour de véhicules d'investissement clairs et d'un cadre réglementaire stabilisé.",
     ],
   },
+  {
+    slug: "transferts-mre-record-122-milliards-2025",
+    title: "122 milliards de dirhams : les transferts MRE pulvérisent un nouveau record en 2025",
+    category: "Capital",
+    readTime: "4 min de lecture",
+    date: "Janvier 2026",
+    source: "H24info / FNH",
+    sourceUrl: "https://h24info.ma/economie/les-transferts-mre-122-mmdh-en-2025/",
+    excerpt:
+      "Les Marocains résidant à l'étranger ont envoyé 122 milliards de dirhams vers le Royaume en 2025 — soit plus que les recettes du tourisme. Un signal fort sur le poids économique et l'attachement de la diaspora.",
+    body: [
+      "122,3 milliards de dirhams. C'est le montant record des transferts effectués par les Marocains résidant à l'étranger (MRE) en 2025, en hausse de 2,6 % par rapport à 2024. Un chiffre qui dépasse pour la troisième année consécutive les recettes du tourisme.",
+      "La France reste le premier pays d'origine de ces transferts, suivie de l'Espagne, de l'Italie et, de plus en plus, des pays du Golfe où la diaspora qualifiée s'est considérablement renforcée ces cinq dernières années.",
+      "Au-delà du chiffre, ce flux représente un signal de confiance structurel envers l'économie marocaine. Une partie croissante de ces capitaux s'oriente désormais vers l'investissement productif — immobilier premium, participation dans des PME, fonds de capital-risque.",
+      "Pour les cadres de la diaspora qui envisagent un retour, cette dynamique traduit une chose claire : les conditions économiques au Maroc se sont suffisamment consolidées pour justifier un engagement à long terme.",
+    ],
+  },
+  {
+    slug: "casablanca-finance-city-premier-hub-africain",
+    title: "Casablanca Finance City : premier hub financier africain — et nouvelle porte d'entrée pour la diaspora",
+    category: "Opportunités",
+    readTime: "5 min de lecture",
+    date: "Mars 2026",
+    source: "FIDM / Openshores",
+    sourceUrl: "https://fidm.eu/news/casablanca-finance-city-la-plateforme-strategique-de-la-diaspora-marocaine-en-afrique/",
+    excerpt:
+      "Classée première place financière africaine par le Global Financial Centres Index 2025, Casablanca Finance City concentre 240 entreprises internationales et 7 000 emplois. Un écosystème taillé pour les profils diaspora.",
+    body: [
+      "Pour la première fois en 2025, le Global Financial Centres Index (GFCI) classe Casablanca Finance City (CFC) comme le premier hub financier du continent africain, devant Johannesburg et Lagos. Une reconnaissance qui change l'équation pour les cadres de la diaspora qui évaluent leur retour.",
+      "CFC regroupe aujourd'hui près de 240 entreprises internationales — dont Huawei, Schneider Electric, et un nombre croissant de fonds d'investissement panafricains. Plus de 7 000 postes y ont été créés, avec une demande forte sur les profils Finance, Tech, Droit des affaires et ESG.",
+      "Le label CFC offre un cadre fiscal particulièrement attractif pour les dirigeants qui rentrent : imposition à taux réduit sur les revenus de source étrangère pendant les premières années, compatibilité avec le statut DRI (Détaché en Retour International).",
+      "Une part significative des recrutements CFC provient désormais directement de la diaspora marocaine — cadres formés à Paris, Londres, New York ou Dubaï, qui reviennent structurer des équipes régionales avec une double légitimité internationale et locale.",
+    ],
+  },
+  {
+    slug: "pourquoi-la-diaspora-revient-maroc-2025",
+    title: "Retour au Maroc : ce qui pousse la diaspora à franchir le pas en 2025",
+    category: "Diaspora",
+    readTime: "6 min de lecture",
+    date: "Février 2026",
+    source: "Le Matin",
+    sourceUrl: "https://lematin.ma/nation/retour-au-maroc-pourquoi-la-diaspora-revient/309429",
+    excerpt:
+      "Depuis 2022, les retours permanents de Marocains résidant à l'étranger s'accélèrent. Qualité de vie, opportunités professionnelles, projets de COP30 et de Coupe du monde 2030 : les facteurs d'attraction se multiplient.",
+    body: [
+      "Depuis 2022, un phénomène s'installe dans la durée : des Marocains résidant à l'étranger (MRE) — certains nés hors du Royaume — choisissent de s'installer définitivement au Maroc. Ce retour n'est plus anecdotique. Il est structurel.",
+      "Les profils qui reviennent ont changé. Ce ne sont plus seulement des retraités ou des primo-arrivants. Ce sont des quadragénaires en pleine carrière, des entrepreneurs, des cadres dirigeants qui ont accumulé 15 à 20 ans d'expérience internationale et qui cherchent un terrain d'impact plus large.",
+      "Trois catalyseurs dominent : la qualité de vie à Casablanca et Rabat (coût du logement, sécurité, gastronomie, proximité des familles), les grands chantiers d'infrastructure — Coupe du monde 2030, COP 30 —, et la dynamique entrepreneuriale qui place le Maroc comme base régionale pour l'Afrique.",
+      "Les freins restent réels : scolarité internationale coûteuse, systèmes administratifs complexes pour les non-résidents de longue date, et un marché immobilier en forte tension dans les quartiers prisés. Ce sont précisément ces obstacles que Diaspora Talent a été conçu pour lever.",
+    ],
+  },
+  {
+    slug: "investir-maroc-2026-guide-diaspora",
+    title: "Investir au Maroc en 2026 : le guide pour la diaspora",
+    category: "Investissement",
+    readTime: "7 min de lecture",
+    date: "Avril 2026",
+    source: "Les Afriques / Marocains du Monde",
+    sourceUrl: "https://lesafriques.com/2026/06/investir-maroc-2026/",
+    excerpt:
+      "Nouveau code de l'investissement, SARL créée en 24h, avantages fiscaux renforcés pour les MRE : le Maroc déploie en 2026 un arsenal inédit pour transformer la diaspora en moteur d'investissement productif.",
+    body: [
+      "Le Maroc de 2026 n'est plus le même terrain qu'il y a dix ans. Le Code de l'Investissement de 2023 a profondément refondu les incitations : primes à la création d'emplois, réductions fiscales sur les bénéfices des premiers exercices, guichet unique dématérialisé.",
+      "Pour les membres de la diaspora, la création d'une SARL se fait désormais en 24 à 72 heures via le portail en ligne, avec un capital minimum de 10 000 MAD. Un signal fort d'accessibilité envoyé aux entrepreneurs marocains établis à l'étranger.",
+      "Sur le plan fiscal, le statut DRI (Détaché en Retour International) permet aux cadres qui rentrent de bénéficier d'une exonération partielle sur certains revenus de source étrangère pendant les premières années de résidence. Combiné aux conventions de double imposition signées avec la France, l'Espagne, la Belgique et le Canada, ce dispositif rend le retour financièrement compétitif.",
+      "Les secteurs les plus porteurs pour les investisseurs diaspora en 2026 : les énergies renouvelables (objectif 52 % du mix électrique d'ici 2030), la tech et les services numériques, l'agritech, et l'immobilier de niche dans les villes secondaires en forte croissance (Tanger, Agadir, Marrakech).",
+    ],
+  },
 ];
 
 export function findArticle(slug: string) {
