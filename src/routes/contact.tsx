@@ -51,6 +51,24 @@ function ContactPage() {
     }
     setSubmitting(true);
     setTimeout(() => {
+      // Save to localStorage for admin backoffice
+      try {
+        const existing = JSON.parse(localStorage.getItem("dt_submissions") ?? "[]");
+        existing.push({
+          id: crypto.randomUUID(),
+          type: "contact",
+          name: parsed.data.name,
+          email: parsed.data.email,
+          role: parsed.data.role,
+          country: parsed.data.country,
+          message: parsed.data.message,
+          date: new Date().toISOString(),
+          status: "new",
+          notes: "",
+        });
+        localStorage.setItem("dt_submissions", JSON.stringify(existing));
+      } catch { /* noop */ }
+
       setSubmitting(false);
       (e.target as HTMLFormElement).reset();
       toast.success("Demande reçue. Un partner vous répondra sous 48 heures.");

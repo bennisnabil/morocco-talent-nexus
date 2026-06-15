@@ -149,6 +149,26 @@ function JoinPage() {
     }
     setSubmitting(true);
     setTimeout(() => {
+      // Save to localStorage for admin backoffice
+      try {
+        const existing = JSON.parse(localStorage.getItem("dt_submissions") ?? "[]");
+        existing.push({
+          id: crypto.randomUUID(),
+          type: "candidature",
+          name: parsed.data.name,
+          email: parsed.data.email,
+          location: parsed.data.location,
+          sector: parsed.data.sector,
+          seniority: parsed.data.seniority,
+          linkedin: parsed.data.linkedin,
+          message: parsed.data.message,
+          date: new Date().toISOString(),
+          status: "new",
+          notes: "",
+        });
+        localStorage.setItem("dt_submissions", JSON.stringify(existing));
+      } catch { /* noop */ }
+
       setSubmitting(false);
       (e.target as HTMLFormElement).reset();
       setCvName(null);
