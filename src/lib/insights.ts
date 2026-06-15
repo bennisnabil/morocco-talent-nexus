@@ -147,7 +147,7 @@ export const articles: Article[] = [
       "Depuis 2022, un phénomène s'installe dans la durée : des Marocains résidant à l'étranger (MRE) — certains nés hors du Royaume — choisissent de s'installer définitivement au Maroc. Ce retour n'est plus anecdotique. Il est structurel.",
       "Les profils qui reviennent ont changé. Ce ne sont plus seulement des retraités ou des primo-arrivants. Ce sont des quadragénaires en pleine carrière, des entrepreneurs, des cadres dirigeants qui ont accumulé 15 à 20 ans d'expérience internationale et qui cherchent un terrain d'impact plus large.",
       "Trois catalyseurs dominent : la qualité de vie à Casablanca et Rabat (coût du logement, sécurité, gastronomie, proximité des familles), les grands chantiers d'infrastructure — Coupe du monde 2030, COP 30 —, et la dynamique entrepreneuriale qui place le Maroc comme base régionale pour l'Afrique.",
-      "Les freins restent réels : scolarité internationale coûteuse, systèmes administratifs complexes pour les non-résidents de longue date, et un marché immobilier en forte tension dans les quartiers prisés. Ce sont précisément ces obstacles que Diaspora Talent a été conçu pour lever.",
+      "Les freins restent réels : scolarité internationale coûteuse, systèmes administratifs complexes pour les non-résidents de longue date, et un marché immobilier en forte tension dans les quartiers prisés. Ce sont précisément ces obstacles que DiasporaConnect a été conçu pour lever.",
     ],
   },
   {

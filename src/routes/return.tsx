@@ -6,13 +6,13 @@ import { CtaButton } from "@/components/cta-button";
 export const Route = createFileRoute("/return")({
   head: () => ({
     meta: [
-      { title: "Retour au Maroc — Conciergerie premium | Diaspora Talent" },
+      { title: "Retour au Maroc — Conciergerie premium | DiasporaConnect" },
       {
         name: "description",
         content:
           "Accompagnement premium au retour au Maroc : stratégie de carrière, relocation, fiscalité, networking et onboarding exécutif.",
       },
-      { property: "og:title", content: "Retour au Maroc — Diaspora Talent" },
+      { property: "og:title", content: "Retour au Maroc — DiasporaConnect" },
       {
         property: "og:description",
         content:

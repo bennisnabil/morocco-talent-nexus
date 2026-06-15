@@ -4,13 +4,13 @@ import { SectionHeading } from "@/components/section-heading";
 export const Route = createFileRoute("/evenements")({
   head: () => ({
     meta: [
-      { title: "Agenda diaspora — Diaspora Talent" },
+      { title: "Agenda diaspora — DiasporaConnect" },
       {
         name: "description",
         content:
           "Rencontres, conférences et événements pour la diaspora marocaine en Europe, Amériques et Golfe. Ne manquez aucun rendez-vous clé.",
       },
-      { property: "og:title", content: "Agenda diaspora — Diaspora Talent" },
+      { property: "og:title", content: "Agenda diaspora — DiasporaConnect" },
       {
         property: "og:description",
         content: "Les événements incontournables de la diaspora marocaine en 2025-2026.",
@@ -59,7 +59,7 @@ const EVENTS: Event[] = [
     city: "Londres",
     country: "Royaume-Uni",
     type: "networking",
-    organizer: "Diaspora Talent × Invest in Morocco",
+    organizer: "DiasporaConnect × Invest in Morocco",
     featured: true,
   },
   {
@@ -96,7 +96,7 @@ const EVENTS: Event[] = [
     city: "Online",
     country: "International",
     type: "webinar",
-    organizer: "Diaspora Talent",
+    organizer: "DiasporaConnect",
     featured: false,
   },
   {

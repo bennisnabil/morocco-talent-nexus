@@ -5,13 +5,13 @@ import { SectionHeading } from "@/components/section-heading";
 export const Route = createFileRoute("/calculateur")({
   head: () => ({
     meta: [
-      { title: "Calculateur fiscal DRI — Diaspora Talent" },
+      { title: "Calculateur fiscal DRI — DiasporaConnect" },
       {
         name: "description",
         content:
-          "Estimez votre gain fiscal en rentrant au Maroc via le statut DRI. Simulateur interactif exclusif Diaspora Talent.",
+          "Estimez votre gain fiscal en rentrant au Maroc via le statut DRI. Simulateur interactif exclusif DiasporaConnect.",
       },
-      { property: "og:title", content: "Calculateur fiscal DRI — Diaspora Talent" },
+      { property: "og:title", content: "Calculateur fiscal DRI — DiasporaConnect" },
       {
         property: "og:description",
         content: "Simulateur fiscal pour cadres de la diaspora marocaine.",

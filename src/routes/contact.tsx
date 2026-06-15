@@ -7,13 +7,13 @@ import { SectionHeading } from "@/components/section-heading";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Prendre rendez-vous — Diaspora Talent" },
+      { title: "Prendre rendez-vous — DiasporaConnect" },
       {
         name: "description",
         content:
           "Commencez par une consultation privée et confidentielle. Une heure, un stratège.",
       },
-      { property: "og:title", content: "Prendre rendez-vous — Diaspora Talent" },
+      { property: "og:title", content: "Prendre rendez-vous — DiasporaConnect" },
       {
         property: "og:description",
         content: "Consultation privée pour les cadres et les organisations.",
@@ -94,21 +94,21 @@ function ContactPage() {
           <div>
             <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">Email</p>
             <a
-              href="mailto:contact@diasporatalent.ma"
+              href="mailto:contact@diasporaconnect.ma"
               className="text-foreground/80 hover:text-primary transition-colors"
             >
-              contact@diasporatalent.ma
+              contact@diasporaconnect.ma
             </a>
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">LinkedIn</p>
             <a
-              href="https://www.linkedin.com/company/diaspora-talent"
+              href="https://www.linkedin.com/company/diasporaconnect"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/80 hover:text-primary transition-colors"
             >
-              Diaspora Talent ↗
+              DiasporaConnect ↗
             </a>
           </div>
           <div>

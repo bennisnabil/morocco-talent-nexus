@@ -10,13 +10,13 @@ import { summarizeCv, chatReturn } from "@/lib/cv-assistant.functions";
 export const Route = createFileRoute("/join")({
   head: () => ({
     meta: [
-      { title: "Rejoindre le réseau — Diaspora Talent" },
+      { title: "Rejoindre le réseau — DiasporaConnect" },
       {
         name: "description",
         content:
           "Postulez au réseau privé de cadres marocains. Téléchargez votre CV, recevez une analyse IA et discutez de votre retour au Maroc.",
       },
-      { property: "og:title", content: "Rejoindre le réseau — Diaspora Talent" },
+      { property: "og:title", content: "Rejoindre le réseau — DiasporaConnect" },
       {
         property: "og:description",
         content: "L'adhésion se fait sur candidature. Commencez la vôtre.",

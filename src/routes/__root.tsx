@@ -62,13 +62,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Diaspora Talent — Le réseau mondial des talents marocains" },
+      { title: "DiasporaConnect — Le réseau mondial des talents marocains" },
       {
         name: "description",
         content:
           "Opportunités exécutives, relocation stratégique et accompagnement premium au retour au Maroc pour les professionnels marocains du monde entier.",
       },
-      { property: "og:title", content: "Diaspora Talent — Le réseau mondial des talents marocains" },
+      { property: "og:title", content: "DiasporaConnect — Le réseau mondial des talents marocains" },
       {
         property: "og:description",
         content:
@@ -76,7 +76,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Diaspora Talent — Le réseau mondial des talents marocains" },
+      { name: "twitter:title", content: "DiasporaConnect — Le réseau mondial des talents marocains" },
       { name: "twitter:description", content: "Opportunités exécutives, relocation stratégique et accompagnement premium au retour au Maroc pour les professionnels marocains du monde entier." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/466c3125-031a-4389-80dd-c35c128e5149/id-preview-456c4603--5080ea84-013d-47ab-84d4-1ca65dae807d.lovable.app-1778692305726.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/466c3125-031a-4389-80dd-c35c128e5149/id-preview-456c4603--5080ea84-013d-47ab-84d4-1ca65dae807d.lovable.app-1778692305726.png" },

@@ -4,13 +4,13 @@ import { SectionHeading } from "@/components/section-heading";
 export const Route = createFileRoute("/a-propos")({
   head: () => ({
     meta: [
-      { title: "Qui sommes-nous — Diaspora Talent by Gibraltar Consulting" },
+      { title: "Qui sommes-nous — DiasporaConnect by Gibraltar Consulting" },
       {
         name: "description",
         content:
-          "Diaspora Talent est une initiative de Gibraltar Consulting — cabinet d'executive search fondé en 2014, spécialiste des Talents Marocains du Monde et membre du réseau Talentor (Global Top 40).",
+          "DiasporaConnect est une initiative de Gibraltar Consulting — cabinet d'executive search fondé en 2014, spécialiste des Talents Marocains du Monde et membre du réseau Talentor (Global Top 40).",
       },
-      { property: "og:title", content: "Qui sommes-nous — Diaspora Talent" },
+      { property: "og:title", content: "Qui sommes-nous — DiasporaConnect" },
     ],
   }),
   component: AProposPage,
@@ -25,7 +25,7 @@ function AProposPage() {
           <SectionHeading
             eyebrow="Qui sommes-nous"
             title="Gibraltar Consulting."
-            subtitle="Diaspora Talent est une initiative de Gibraltar Consulting — cabinet d'executive search fondé en 2014, dédié aux Talents Marocains du Monde."
+            subtitle="DiasporaConnect est une initiative de Gibraltar Consulting — cabinet d'executive search fondé en 2014, dédié aux Talents Marocains du Monde."
             serifClass="text-5xl md:text-7xl"
           />
         </div>
